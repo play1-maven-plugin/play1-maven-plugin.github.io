@@ -1,0 +1,14 @@
+<map id="G" name="G">
+<area shape="rect" id="c0" href="./HelpMojo.html" title="com.google.code.play.japid.HelpMojo" alt="" coords="154,17,225,41"/>
+<area shape="rect" id="node1" href="./HelpMojo.html" title="&lt;TABLE&gt;" alt="" coords="144,5,235,53"/>
+<area shape="rect" id="c1" href="./PlayJapidRegenMojo.html" title="com.google.code.play.japid.PlayJapidRegenMojo" alt="" coords="15,113,150,137"/>
+<area shape="rect" id="node2" href="./PlayJapidRegenMojo.html" title="&lt;TABLE&gt;" alt="" coords="5,101,160,149"/>
+<area shape="rect" id="c2" href="./PlayJapidMkdirMojo.html" title="com.google.code.play.japid.PlayJapidMkdirMojo" alt="" coords="194,113,321,137"/>
+<area shape="rect" id="node3" href="./PlayJapidMkdirMojo.html" title="&lt;TABLE&gt;" alt="" coords="184,101,331,149"/>
+<area shape="rect" id="c3" href="./PlayJapidGenMojo.html" title="com.google.code.play.japid.PlayJapidGenMojo" alt="" coords="365,113,486,137"/>
+<area shape="rect" id="node4" href="./PlayJapidGenMojo.html" title="&lt;TABLE&gt;" alt="" coords="355,101,496,149"/>
+<area shape="rect" id="c4" href="./PlayJapidCleanMojo.html" title="com.google.code.play.japid.PlayJapidCleanMojo" alt="" coords="531,113,661,137"/>
+<area shape="rect" id="node5" href="./PlayJapidCleanMojo.html" title="&lt;TABLE&gt;" alt="" coords="520,101,672,149"/>
+<area shape="rect" id="c5" href="./AbstractPlayJapidMojo.html" title="com.google.code.play.japid.AbstractPlayJapidMojo" alt="" coords="269,17,413,41"/>
+<area shape="rect" id="node6" href="./AbstractPlayJapidMojo.html" title="&lt;TABLE&gt;" alt="" coords="259,5,424,53"/>
+</map>
