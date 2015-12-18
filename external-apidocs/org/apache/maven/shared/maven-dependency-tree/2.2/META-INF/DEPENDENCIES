@@ -1,0 +1,25 @@
+// ------------------------------------------------------------------
+// Transitive dependencies of this project determined from the
+// maven pom organized by organization.
+// ------------------------------------------------------------------
+
+Apache Maven Dependency Tree
+
+
+From: 'Codehaus' (http://www.codehaus.org/)
+  - Plexus :: Component Annotations (http://plexus.codehaus.org/plexus-containers/plexus-component-annotations/) org.codehaus.plexus:plexus-component-annotations:jar:1.5.5
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+From: 'Sonatype, Inc.' (http://www.sonatype.com/)
+  - Aether :: API (http://aether.sonatype.org/aether-api/) org.sonatype.aether:aether-api:jar:1.13.1
+    License: Eclipse Public License, Version 1.0  (http://www.eclipse.org/legal/epl-v10.html)
+
+From: 'The Eclipse Foundation' (http://www.eclipse.org/)
+  - Aether API (http://www.eclipse.org/aether/aether-api/) org.eclipse.aether:aether-api:jar:0.9.0.M2
+    License: Eclipse Public License, Version 1.0  (http://www.eclipse.org/legal/epl-v10.html)
+  - Aether Utilities (http://www.eclipse.org/aether/aether-util/) org.eclipse.aether:aether-util:jar:0.9.0.M2
+    License: Eclipse Public License, Version 1.0  (http://www.eclipse.org/legal/epl-v10.html)
+
+
+
+
