@@ -10,24 +10,33 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// com.google.code.play.surefire.junit4.TestInvocation
-	c101 [label=<<table title="com.google.code.play.surefire.junit4.TestInvocation" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./TestInvocation.html">
+	c127 [label=<<table title="com.google.code.play.surefire.junit4.TestInvocation" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./TestInvocation.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> TestInvocation </td></tr>
 		</table></td></tr>
 		</table>>, URL="./TestInvocation.html", fontname="arial", fontcolor="black", fontsize=9.0];
 	//com.google.code.play.surefire.junit4.TestInvocation extends play.Invoker.DirectInvocation
-	c107:p -> c101:p [dir=back,arrowtail=empty];
+	c133:p -> c127:p [dir=back,arrowtail=empty];
+	// com.google.code.play.surefire.junit4.TestInvocation NAVASSOC org.junit.runner.Runner
+	c127:p -> c134:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 	// com.google.code.play.surefire.junit4.TestInvocation NAVASSOC org.junit.runner.notification.RunNotifier
-	c101:p -> c108:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c127:p -> c135:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	// org.junit.runner.Runner
+	c134 [label=<<table title="org.junit.runner.Runner" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="center" balign="center"><font face="arial italic"> Runner </font></td></tr>
+<tr><td align="center" balign="center"><font point-size="7.0"> org.junit.runner </font></td></tr>
+		</table></td></tr>
+		</table>>, URL="null", fontname="arial", fontcolor="black", fontsize=9.0];
 	// play.Invoker.DirectInvocation
-	c107 [label=<<table title="play.Invoker.DirectInvocation" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c133 [label=<<table title="play.Invoker.DirectInvocation" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="arial italic"> DirectInvocation </font></td></tr>
 <tr><td align="center" balign="center"><font point-size="7.0"> play.Invoker </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="null", fontname="arial", fontcolor="black", fontsize=9.0];
 	// org.junit.runner.notification.RunNotifier
-	c108 [label=<<table title="org.junit.runner.notification.RunNotifier" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c135 [label=<<table title="org.junit.runner.notification.RunNotifier" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> RunNotifier </td></tr>
 <tr><td align="center" balign="center"><font point-size="7.0"> org.junit.runner.notification </font></td></tr>

@@ -95,12 +95,12 @@ var activeTableTab = "activeTableTab";
 <div class="subTitle">com.google.code.play.selenium.step</div>
 <h2 title="Class WaitForEqualsStep" class="title">Class WaitForEqualsStep</h2>
 <map id="G" name="G">
-<area shape="rect" id="c1880" href="./WaitForEqualsStep.html" title="com.google.code.play.selenium.step.WaitForEqualsStep" alt="" coords="35,113,160,137"/>
-<area shape="rect" id="node1" href="./WaitForEqualsStep.html" title="&lt;TABLE&gt;" alt="" coords="24,101,171,149"/>
-<area shape="rect" id="c1889" href="./StringSeleniumCommand.html" title="com.google.code.play.selenium.step.StringSeleniumCommand" alt="" coords="16,209,179,233"/>
-<area shape="rect" id="node2" href="./StringSeleniumCommand.html" title="&lt;TABLE&gt;" alt="" coords="5,197,189,245"/>
-<area shape="rect" id="c1912" href="./AbstractSeleniumStep.html" title="com.google.code.play.selenium.step.AbstractSeleniumStep" alt="" coords="27,17,168,41"/>
-<area shape="rect" id="node3" href="./AbstractSeleniumStep.html" title="&lt;TABLE&gt;" alt="" coords="16,5,179,53"/>
+<area shape="rect" id="c1713" href="./WaitForEqualsStep.html" title="com.google.code.play.selenium.step.WaitForEqualsStep" alt="" coords="41,113,167,137"/>
+<area shape="rect" id="node1" href="./WaitForEqualsStep.html" title="&lt;TABLE&gt;" alt="" coords="31,101,177,149"/>
+<area shape="rect" id="c1723" href="./StringSeleniumCommand.html" title="com.google.code.play.selenium.step.StringSeleniumCommand" alt="" coords="23,209,185,233"/>
+<area shape="rect" id="node2" href="./StringSeleniumCommand.html" title="&lt;TABLE&gt;" alt="" coords="12,197,196,245"/>
+<area shape="rect" id="c1742" href="./AbstractTimedSeleniumStep.html" title="com.google.code.play.selenium.step.AbstractTimedSeleniumStep" alt="" coords="15,17,193,41"/>
+<area shape="rect" id="node3" href="./AbstractTimedSeleniumStep.html" title="&lt;TABLE&gt;" alt="" coords="5,5,203,53"/>
 </map>
 <!-- UML diagram added by UMLGraph version R5_6-24-gf6e263 (http://www.umlgraph.org/) -->
 <div align="center"><img src="WaitForEqualsStep.png" alt="Package class diagram package WaitForEqualsStep" usemap="#G" border=0/></div>
@@ -113,7 +113,12 @@ var activeTableTab = "activeTableTab";
 <li><a href="../../../../../../com/google/code/play/selenium/step/AbstractSeleniumStep.html" title="class in com.google.code.play.selenium.step">com.google.code.play.selenium.step.AbstractSeleniumStep</a></li>
 <li>
 <ul class="inheritance">
+<li><a href="../../../../../../com/google/code/play/selenium/step/AbstractTimedSeleniumStep.html" title="class in com.google.code.play.selenium.step">com.google.code.play.selenium.step.AbstractTimedSeleniumStep</a></li>
+<li>
+<ul class="inheritance">
 <li>com.google.code.play.selenium.step.WaitForEqualsStep</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -129,7 +134,7 @@ var activeTableTab = "activeTableTab";
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">WaitForEqualsStep</span>
-extends <a href="../../../../../../com/google/code/play/selenium/step/AbstractSeleniumStep.html" title="class in com.google.code.play.selenium.step">AbstractSeleniumStep</a></pre>
+extends <a href="../../../../../../com/google/code/play/selenium/step/AbstractTimedSeleniumStep.html" title="class in com.google.code.play.selenium.step">AbstractTimedSeleniumStep</a></pre>
 </li>
 </ul>
 </div>
@@ -148,8 +153,9 @@ extends <a href="../../../../../../com/google/code/play/selenium/step/AbstractSe
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../com/google/code/play/selenium/step/WaitForEqualsStep.html#WaitForEqualsStep-com.google.code.play.selenium.step.StringSeleniumCommand-java.lang.String-">WaitForEqualsStep</a></span>(<a href="../../../../../../com/google/code/play/selenium/step/StringSeleniumCommand.html" title="class in com.google.code.play.selenium.step">StringSeleniumCommand</a>&nbsp;innerCommand,
-                 <a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;expected)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../com/google/code/play/selenium/step/WaitForEqualsStep.html#WaitForEqualsStep-com.google.code.play.selenium.step.StringSeleniumCommand-java.lang.String-com.google.code.play.selenium.Timeout-">WaitForEqualsStep</a></span>(<a href="../../../../../../com/google/code/play/selenium/step/StringSeleniumCommand.html" title="class in com.google.code.play.selenium.step">StringSeleniumCommand</a>&nbsp;innerCommand,
+                 <a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;expected,
+                 <a href="../../../../../../com/google/code/play/selenium/Timeout.html" title="class in com.google.code.play.selenium">Timeout</a>&nbsp;timeout)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -175,6 +181,13 @@ extends <a href="../../../../../../com/google/code/play/selenium/step/AbstractSe
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/google/code/play/selenium/step/WaitForEqualsStep.html#toString--">toString</a></span>()</code>&nbsp;</td>
 </tr>
 </table>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.com.google.code.play.selenium.step.AbstractTimedSeleniumStep">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;com.google.code.play.selenium.step.<a href="../../../../../../com/google/code/play/selenium/step/AbstractTimedSeleniumStep.html" title="class in com.google.code.play.selenium.step">AbstractTimedSeleniumStep</a></h3>
+<code><a href="../../../../../../com/google/code/play/selenium/step/AbstractTimedSeleniumStep.html#getTimeout--">getTimeout</a>, <a href="../../../../../../com/google/code/play/selenium/step/AbstractTimedSeleniumStep.html#getTimeoutAsInt--">getTimeoutAsInt</a></code></li>
+</ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.com.google.code.play.selenium.step.AbstractSeleniumStep">
 <!--   -->
@@ -203,14 +216,15 @@ extends <a href="../../../../../../com/google/code/play/selenium/step/AbstractSe
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="WaitForEqualsStep-com.google.code.play.selenium.step.StringSeleniumCommand-java.lang.String-">
+<a name="WaitForEqualsStep-com.google.code.play.selenium.step.StringSeleniumCommand-java.lang.String-com.google.code.play.selenium.Timeout-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>WaitForEqualsStep</h4>
 <pre>public&nbsp;WaitForEqualsStep(<a href="../../../../../../com/google/code/play/selenium/step/StringSeleniumCommand.html" title="class in com.google.code.play.selenium.step">StringSeleniumCommand</a>&nbsp;innerCommand,
-                         <a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;expected)</pre>
+                         <a href="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;expected,
+                         <a href="../../../../../../com/google/code/play/selenium/Timeout.html" title="class in com.google.code.play.selenium">Timeout</a>&nbsp;timeout)</pre>
 </li>
 </ul>
 </li>
@@ -319,6 +333,6 @@ extends <a href="../../../../../../com/google/code/play/selenium/step/AbstractSe
 <!--   -->
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
-<p class="legalCopy"><small>Copyright &#169; 2010&#x2013;2015. All rights reserved.</small></p>
+<p class="legalCopy"><small>Copyright &#169; 2010&#x2013;2016. All rights reserved.</small></p>
 </body>
 </html>

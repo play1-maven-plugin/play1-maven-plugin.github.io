@@ -1,10 +1,12 @@
 <map id="G" name="G">
-<area shape="rect" id="c44" href="./StoredVars.html" title="com.google.code.play.selenium.StoredVars" alt="" coords="16,19,96,43"/>
-<area shape="rect" id="node1" href="./StoredVars.html" title="&lt;TABLE&gt;" alt="" coords="5,7,107,55"/>
-<area shape="rect" id="c45" href="./Step.html" title="com.google.code.play.selenium.Step" alt="" coords="141,11,221,50"/>
-<area shape="rect" id="node2" href="./Step.html" title="&lt;TABLE&gt;" alt="" coords="131,6,232,55"/>
-<area shape="rect" id="c46" href="./SeleneseParser.html" title="com.google.code.play.selenium.SeleneseParser" alt="" coords="267,11,376,50"/>
-<area shape="rect" id="node3" href="./SeleneseParser.html" title="&lt;TABLE&gt;" alt="" coords="256,6,387,55"/>
-<area shape="rect" id="c47" href="./PlaySeleniumTest.html" title="com.google.code.play.selenium.PlaySeleniumTest" alt="" coords="421,19,539,43"/>
-<area shape="rect" id="node4" href="./PlaySeleniumTest.html" title="&lt;TABLE&gt;" alt="" coords="411,7,549,55"/>
+<area shape="rect" id="c42" href="./Timeout.html" title="com.google.code.play.selenium.Timeout" alt="" coords="16,19,80,43"/>
+<area shape="rect" id="node1" href="./Timeout.html" title="&lt;TABLE&gt;" alt="" coords="5,7,91,55"/>
+<area shape="rect" id="c43" href="./StoredVars.html" title="com.google.code.play.selenium.StoredVars" alt="" coords="125,19,205,43"/>
+<area shape="rect" id="node2" href="./StoredVars.html" title="&lt;TABLE&gt;" alt="" coords="115,7,216,55"/>
+<area shape="rect" id="c44" href="./Step.html" title="com.google.code.play.selenium.Step" alt="" coords="251,11,331,50"/>
+<area shape="rect" id="node3" href="./Step.html" title="&lt;TABLE&gt;" alt="" coords="240,6,341,55"/>
+<area shape="rect" id="c45" href="./SeleneseParser.html" title="com.google.code.play.selenium.SeleneseParser" alt="" coords="376,11,485,50"/>
+<area shape="rect" id="node4" href="./SeleneseParser.html" title="&lt;TABLE&gt;" alt="" coords="365,6,496,55"/>
+<area shape="rect" id="c46" href="./PlaySeleniumTest.html" title="com.google.code.play.selenium.PlaySeleniumTest" alt="" coords="530,19,649,43"/>
+<area shape="rect" id="node5" href="./PlaySeleniumTest.html" title="&lt;TABLE&gt;" alt="" coords="520,7,659,55"/>
 </map>

@@ -10,7 +10,7 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// com.google.code.play.surefire.junit4.PlayStopRunnable
-	c16 [label=<<table title="com.google.code.play.surefire.junit4.PlayStopRunnable" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./PlayStopRunnable.html">
+	c15 [label=<<table title="com.google.code.play.surefire.junit4.PlayStopRunnable" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./PlayStopRunnable.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> PlayStopRunnable </td></tr>
 		</table></td></tr>
@@ -22,14 +22,14 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="./PlayStartRunnable.html", fontname="arial", fontcolor="black", fontsize=9.0];
 	// com.google.code.play.surefire.junit4.AbstractRunnable
-	c41 [label=<<table title="com.google.code.play.surefire.junit4.AbstractRunnable" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./AbstractRunnable.html">
+	c47 [label=<<table title="com.google.code.play.surefire.junit4.AbstractRunnable" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./AbstractRunnable.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="arial italic"> AbstractRunnable </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="./AbstractRunnable.html", fontname="arial", fontcolor="black", fontsize=9.0];
 	//com.google.code.play.surefire.junit4.PlayStopRunnable extends com.google.code.play.surefire.junit4.AbstractRunnable
-	c41:p -> c16:p [dir=back,arrowtail=empty];
+	c47:p -> c15:p [dir=back,arrowtail=empty];
 	//com.google.code.play.surefire.junit4.PlayStartRunnable extends com.google.code.play.surefire.junit4.AbstractRunnable
-	c41:p -> c19:p [dir=back,arrowtail=empty];
+	c47:p -> c19:p [dir=back,arrowtail=empty];
 }
 

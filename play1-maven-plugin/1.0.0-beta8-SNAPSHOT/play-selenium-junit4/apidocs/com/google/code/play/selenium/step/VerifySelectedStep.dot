@@ -10,18 +10,18 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// com.google.code.play.selenium.step.VerifySelectedStep
-	c1754 [label=<<table title="com.google.code.play.selenium.step.VerifySelectedStep" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./VerifySelectedStep.html">
+	c1553 [label=<<table title="com.google.code.play.selenium.step.VerifySelectedStep" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./VerifySelectedStep.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> VerifySelectedStep </td></tr>
 		</table></td></tr>
 		</table>>, URL="./VerifySelectedStep.html", fontname="arial", fontcolor="black", fontsize=9.0];
 	// com.google.code.play.selenium.step.VerifyEqualsStep
-	c1757 [label=<<table title="com.google.code.play.selenium.step.VerifyEqualsStep" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./VerifyEqualsStep.html">
+	c1556 [label=<<table title="com.google.code.play.selenium.step.VerifyEqualsStep" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./VerifyEqualsStep.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> VerifyEqualsStep </td></tr>
 		</table></td></tr>
 		</table>>, URL="./VerifyEqualsStep.html", fontname="arial", fontcolor="black", fontsize=9.0];
 	//com.google.code.play.selenium.step.VerifySelectedStep extends com.google.code.play.selenium.step.VerifyEqualsStep
-	c1757:p -> c1754:p [dir=back,arrowtail=empty];
+	c1556:p -> c1553:p [dir=back,arrowtail=empty];
 }
 

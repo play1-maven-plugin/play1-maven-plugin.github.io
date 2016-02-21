@@ -50,7 +50,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../../../com/google/code/play/selenium/step/AbstractSeleniumCommand.html" title="class in com.google.code.play.selenium.step"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../../../com/google/code/play/selenium/step/AndWaitStep.html" title="class in com.google.code.play.selenium.step"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../../../com/google/code/play/selenium/step/AbstractTimedSeleniumStep.html" title="class in com.google.code.play.selenium.step"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../../index.html?com/google/code/play/selenium/step/AbstractSeleniumStep.html" target="_top">Frames</a></li>
@@ -95,54 +95,40 @@ var activeTableTab = "activeTableTab";
 <div class="subTitle">com.google.code.play.selenium.step</div>
 <h2 title="Class AbstractSeleniumStep" class="title">Class AbstractSeleniumStep</h2>
 <map id="G" name="G">
-<area shape="rect" id="c271" href="../Step.html" title="com.google.code.play.selenium.Step" alt="" coords="1785,11,1935,61"/>
-<area shape="rect" id="node1" href="../Step.html" title="&lt;TABLE&gt;" alt="" coords="1775,5,1945,67"/>
-<area shape="rect" id="c309" href="./AbstractSeleniumStep.html" title="com.google.code.play.selenium.step.AbstractSeleniumStep" alt="" coords="1789,127,1931,151"/>
-<area shape="rect" id="node24" href="./AbstractSeleniumStep.html" title="&lt;TABLE&gt;" alt="" coords="1779,115,1941,163"/>
-<area shape="rect" id="c274" href="./WaitForTrueStep.html" title="com.google.code.play.selenium.step.WaitForTrueStep" alt="" coords="15,223,126,247"/>
-<area shape="rect" id="node2" href="./WaitForTrueStep.html" title="&lt;TABLE&gt;" alt="" coords="5,211,136,259"/>
-<area shape="rect" id="c275" href="./WaitForNotEqualsStep.html" title="com.google.code.play.selenium.step.WaitForNotEqualsStep" alt="" coords="171,223,315,247"/>
-<area shape="rect" id="node3" href="./WaitForNotEqualsStep.html" title="&lt;TABLE&gt;" alt="" coords="160,211,325,259"/>
-<area shape="rect" id="c276" href="./WaitForFalseStep.html" title="com.google.code.play.selenium.step.WaitForFalseStep" alt="" coords="360,223,477,247"/>
-<area shape="rect" id="node4" href="./WaitForFalseStep.html" title="&lt;TABLE&gt;" alt="" coords="349,211,488,259"/>
-<area shape="rect" id="c277" href="./WaitForEqualsStep.html" title="com.google.code.play.selenium.step.WaitForEqualsStep" alt="" coords="523,223,648,247"/>
-<area shape="rect" id="node5" href="./WaitForEqualsStep.html" title="&lt;TABLE&gt;" alt="" coords="512,211,659,259"/>
-<area shape="rect" id="c279" href="./VerifyTrueStep.html" title="com.google.code.play.selenium.step.VerifyTrueStep" alt="" coords="693,223,790,247"/>
-<area shape="rect" id="node6" href="./VerifyTrueStep.html" title="&lt;TABLE&gt;" alt="" coords="683,211,800,259"/>
-<area shape="rect" id="c281" href="./VerifyNotEqualsStep.html" title="com.google.code.play.selenium.step.VerifyNotEqualsStep" alt="" coords="835,223,965,247"/>
-<area shape="rect" id="node7" href="./VerifyNotEqualsStep.html" title="&lt;TABLE&gt;" alt="" coords="824,211,976,259"/>
-<area shape="rect" id="c282" href="./VerifyFalseStep.html" title="com.google.code.play.selenium.step.VerifyFalseStep" alt="" coords="1011,223,1115,247"/>
-<area shape="rect" id="node8" href="./VerifyFalseStep.html" title="&lt;TABLE&gt;" alt="" coords="1000,211,1125,259"/>
-<area shape="rect" id="c283" href="./VerifyEqualsStep.html" title="com.google.code.play.selenium.step.VerifyEqualsStep" alt="" coords="1160,223,1272,247"/>
-<area shape="rect" id="node9" href="./VerifyEqualsStep.html" title="&lt;TABLE&gt;" alt="" coords="1149,211,1283,259"/>
-<area shape="rect" id="c288" href="./PlayVerifyTextLikeStep.html" title="com.google.code.play.selenium.step.PlayVerifyTextLikeStep" alt="" coords="1317,223,1459,247"/>
-<area shape="rect" id="node10" href="./PlayVerifyTextLikeStep.html" title="&lt;TABLE&gt;" alt="" coords="1307,211,1469,259"/>
-<area shape="rect" id="c289" href="./PlayVerifyNotEqualsStep.html" title="com.google.code.play.selenium.step.PlayVerifyNotEqualsStep" alt="" coords="1503,223,1657,247"/>
-<area shape="rect" id="node11" href="./PlayVerifyNotEqualsStep.html" title="&lt;TABLE&gt;" alt="" coords="1493,211,1667,259"/>
-<area shape="rect" id="c290" href="./PlayVerifyEqualsStep.html" title="com.google.code.play.selenium.step.PlayVerifyEqualsStep" alt="" coords="1701,223,1835,247"/>
-<area shape="rect" id="node12" href="./PlayVerifyEqualsStep.html" title="&lt;TABLE&gt;" alt="" coords="1691,211,1845,259"/>
-<area shape="rect" id="c293" href="./PlayAssertTextLikeStep.html" title="com.google.code.play.selenium.step.PlayAssertTextLikeStep" alt="" coords="1880,223,2027,247"/>
-<area shape="rect" id="node13" href="./PlayAssertTextLikeStep.html" title="&lt;TABLE&gt;" alt="" coords="1869,211,2037,259"/>
-<area shape="rect" id="c294" href="./PlayAssertNotEqualsStep.html" title="com.google.code.play.selenium.step.PlayAssertNotEqualsStep" alt="" coords="2072,223,2232,247"/>
-<area shape="rect" id="node14" href="./PlayAssertNotEqualsStep.html" title="&lt;TABLE&gt;" alt="" coords="2061,211,2243,259"/>
-<area shape="rect" id="c295" href="./PlayAssertEqualsStep.html" title="com.google.code.play.selenium.step.PlayAssertEqualsStep" alt="" coords="2277,223,2419,247"/>
-<area shape="rect" id="node15" href="./PlayAssertEqualsStep.html" title="&lt;TABLE&gt;" alt="" coords="2267,211,2429,259"/>
-<area shape="rect" id="c296" href="./PauseStep.html" title="com.google.code.play.selenium.step.PauseStep" alt="" coords="2464,223,2544,247"/>
-<area shape="rect" id="node16" href="./PauseStep.html" title="&lt;TABLE&gt;" alt="" coords="2453,211,2555,259"/>
-<area shape="rect" id="c299" href="./EchoStep.html" title="com.google.code.play.selenium.step.EchoStep" alt="" coords="2589,223,2661,247"/>
-<area shape="rect" id="node17" href="./EchoStep.html" title="&lt;TABLE&gt;" alt="" coords="2579,211,2672,259"/>
-<area shape="rect" id="c301" href="./CommandStep.html" title="com.google.code.play.selenium.step.CommandStep" alt="" coords="2706,223,2809,247"/>
-<area shape="rect" id="node18" href="./CommandStep.html" title="&lt;TABLE&gt;" alt="" coords="2696,211,2819,259"/>
-<area shape="rect" id="c303" href="./AssertTrueStep.html" title="com.google.code.play.selenium.step.AssertTrueStep" alt="" coords="2853,223,2957,247"/>
-<area shape="rect" id="node19" href="./AssertTrueStep.html" title="&lt;TABLE&gt;" alt="" coords="2843,211,2968,259"/>
-<area shape="rect" id="c305" href="./AssertNotEqualsStep.html" title="com.google.code.play.selenium.step.AssertNotEqualsStep" alt="" coords="3002,223,3139,247"/>
-<area shape="rect" id="node20" href="./AssertNotEqualsStep.html" title="&lt;TABLE&gt;" alt="" coords="2992,211,3149,259"/>
-<area shape="rect" id="c306" href="./AssertFalseStep.html" title="com.google.code.play.selenium.step.AssertFalseStep" alt="" coords="3184,223,3293,247"/>
-<area shape="rect" id="node21" href="./AssertFalseStep.html" title="&lt;TABLE&gt;" alt="" coords="3173,211,3304,259"/>
-<area shape="rect" id="c307" href="./AssertEqualsStep.html" title="com.google.code.play.selenium.step.AssertEqualsStep" alt="" coords="3339,223,3456,247"/>
-<area shape="rect" id="node22" href="./AssertEqualsStep.html" title="&lt;TABLE&gt;" alt="" coords="3328,211,3467,259"/>
-<area shape="rect" id="c308" href="./AndWaitStep.html" title="com.google.code.play.selenium.step.AndWaitStep" alt="" coords="3501,223,3590,247"/>
-<area shape="rect" id="node23" href="./AndWaitStep.html" title="&lt;TABLE&gt;" alt="" coords="3491,211,3600,259"/>
+<area shape="rect" id="c219" href="../Step.html" title="com.google.code.play.selenium.Step" alt="" coords="975,11,1126,61"/>
+<area shape="rect" id="node1" href="../Step.html" title="&lt;TABLE&gt;" alt="" coords="965,5,1136,67"/>
+<area shape="rect" id="c255" href="./AbstractSeleniumStep.html" title="com.google.code.play.selenium.step.AbstractSeleniumStep" alt="" coords="980,127,1121,151"/>
+<area shape="rect" id="node17" href="./AbstractSeleniumStep.html" title="&lt;TABLE&gt;" alt="" coords="969,115,1132,163"/>
+<area shape="rect" id="c227" href="./VerifyTrueStep.html" title="com.google.code.play.selenium.step.VerifyTrueStep" alt="" coords="15,223,113,247"/>
+<area shape="rect" id="node2" href="./VerifyTrueStep.html" title="&lt;TABLE&gt;" alt="" coords="5,211,123,259"/>
+<area shape="rect" id="c228" href="./VerifyStep.html" title="com.google.code.play.selenium.step.VerifyStep" alt="" coords="157,223,230,247"/>
+<area shape="rect" id="node3" href="./VerifyStep.html" title="&lt;TABLE&gt;" alt="" coords="147,211,240,259"/>
+<area shape="rect" id="c230" href="./VerifyNotEqualsStep.html" title="com.google.code.play.selenium.step.VerifyNotEqualsStep" alt="" coords="275,223,405,247"/>
+<area shape="rect" id="node4" href="./VerifyNotEqualsStep.html" title="&lt;TABLE&gt;" alt="" coords="264,211,416,259"/>
+<area shape="rect" id="c231" href="./VerifyFalseStep.html" title="com.google.code.play.selenium.step.VerifyFalseStep" alt="" coords="451,223,555,247"/>
+<area shape="rect" id="node5" href="./VerifyFalseStep.html" title="&lt;TABLE&gt;" alt="" coords="440,211,565,259"/>
+<area shape="rect" id="c232" href="./VerifyEqualsStep.html" title="com.google.code.play.selenium.step.VerifyEqualsStep" alt="" coords="600,223,712,247"/>
+<area shape="rect" id="node6" href="./VerifyEqualsStep.html" title="&lt;TABLE&gt;" alt="" coords="589,211,723,259"/>
+<area shape="rect" id="c239" href="./PauseStep.html" title="com.google.code.play.selenium.step.PauseStep" alt="" coords="757,223,837,247"/>
+<area shape="rect" id="node7" href="./PauseStep.html" title="&lt;TABLE&gt;" alt="" coords="747,211,848,259"/>
+<area shape="rect" id="c242" href="./EchoStep.html" title="com.google.code.play.selenium.step.EchoStep" alt="" coords="883,223,955,247"/>
+<area shape="rect" id="node8" href="./EchoStep.html" title="&lt;TABLE&gt;" alt="" coords="872,211,965,259"/>
+<area shape="rect" id="c244" href="./CommandStep.html" title="com.google.code.play.selenium.step.CommandStep" alt="" coords="999,223,1102,247"/>
+<area shape="rect" id="node9" href="./CommandStep.html" title="&lt;TABLE&gt;" alt="" coords="989,211,1112,259"/>
+<area shape="rect" id="c245" href="./BreakStep.html" title="com.google.code.play.selenium.step.BreakStep" alt="" coords="1146,223,1222,247"/>
+<area shape="rect" id="node10" href="./BreakStep.html" title="&lt;TABLE&gt;" alt="" coords="1136,211,1232,259"/>
+<area shape="rect" id="c247" href="./AssertTrueStep.html" title="com.google.code.play.selenium.step.AssertTrueStep" alt="" coords="1267,223,1371,247"/>
+<area shape="rect" id="node11" href="./AssertTrueStep.html" title="&lt;TABLE&gt;" alt="" coords="1256,211,1381,259"/>
+<area shape="rect" id="c248" href="./AssertStep.html" title="com.google.code.play.selenium.step.AssertStep" alt="" coords="1415,223,1494,247"/>
+<area shape="rect" id="node12" href="./AssertStep.html" title="&lt;TABLE&gt;" alt="" coords="1405,211,1504,259"/>
+<area shape="rect" id="c250" href="./AssertNotEqualsStep.html" title="com.google.code.play.selenium.step.AssertNotEqualsStep" alt="" coords="1538,223,1675,247"/>
+<area shape="rect" id="node13" href="./AssertNotEqualsStep.html" title="&lt;TABLE&gt;" alt="" coords="1528,211,1685,259"/>
+<area shape="rect" id="c251" href="./AssertFalseStep.html" title="com.google.code.play.selenium.step.AssertFalseStep" alt="" coords="1720,223,1829,247"/>
+<area shape="rect" id="node14" href="./AssertFalseStep.html" title="&lt;TABLE&gt;" alt="" coords="1709,211,1840,259"/>
+<area shape="rect" id="c252" href="./AssertEqualsStep.html" title="com.google.code.play.selenium.step.AssertEqualsStep" alt="" coords="1875,223,1992,247"/>
+<area shape="rect" id="node15" href="./AssertEqualsStep.html" title="&lt;TABLE&gt;" alt="" coords="1864,211,2003,259"/>
+<area shape="rect" id="c254" href="./AbstractTimedSeleniumStep.html" title="com.google.code.play.selenium.step.AbstractTimedSeleniumStep" alt="" coords="2037,223,2214,247"/>
+<area shape="rect" id="node16" href="./AbstractTimedSeleniumStep.html" title="&lt;TABLE&gt;" alt="" coords="2027,211,2224,259"/>
 </map>
 <!-- UML diagram added by UMLGraph version R5_6-24-gf6e263 (http://www.umlgraph.org/) -->
 <div align="center"><img src="AbstractSeleniumStep.png" alt="Package class diagram package AbstractSeleniumStep" usemap="#G" border=0/></div>
@@ -165,7 +151,7 @@ var activeTableTab = "activeTableTab";
 </dl>
 <dl>
 <dt>Direct Known Subclasses:</dt>
-<dd><a href="../../../../../../com/google/code/play/selenium/step/AndWaitStep.html" title="class in com.google.code.play.selenium.step">AndWaitStep</a>, <a href="../../../../../../com/google/code/play/selenium/step/AssertEqualsStep.html" title="class in com.google.code.play.selenium.step">AssertEqualsStep</a>, <a href="../../../../../../com/google/code/play/selenium/step/AssertFalseStep.html" title="class in com.google.code.play.selenium.step">AssertFalseStep</a>, <a href="../../../../../../com/google/code/play/selenium/step/AssertNotEqualsStep.html" title="class in com.google.code.play.selenium.step">AssertNotEqualsStep</a>, <a href="../../../../../../com/google/code/play/selenium/step/AssertTrueStep.html" title="class in com.google.code.play.selenium.step">AssertTrueStep</a>, <a href="../../../../../../com/google/code/play/selenium/step/CommandStep.html" title="class in com.google.code.play.selenium.step">CommandStep</a>, <a href="../../../../../../com/google/code/play/selenium/step/EchoStep.html" title="class in com.google.code.play.selenium.step">EchoStep</a>, <a href="../../../../../../com/google/code/play/selenium/step/PauseStep.html" title="class in com.google.code.play.selenium.step">PauseStep</a>, <a href="../../../../../../com/google/code/play/selenium/step/PlayAssertEqualsStep.html" title="class in com.google.code.play.selenium.step">PlayAssertEqualsStep</a>, <a href="../../../../../../com/google/code/play/selenium/step/PlayAssertNotEqualsStep.html" title="class in com.google.code.play.selenium.step">PlayAssertNotEqualsStep</a>, <a href="../../../../../../com/google/code/play/selenium/step/PlayAssertTextLikeStep.html" title="class in com.google.code.play.selenium.step">PlayAssertTextLikeStep</a>, <a href="../../../../../../com/google/code/play/selenium/step/PlayVerifyEqualsStep.html" title="class in com.google.code.play.selenium.step">PlayVerifyEqualsStep</a>, <a href="../../../../../../com/google/code/play/selenium/step/PlayVerifyNotEqualsStep.html" title="class in com.google.code.play.selenium.step">PlayVerifyNotEqualsStep</a>, <a href="../../../../../../com/google/code/play/selenium/step/PlayVerifyTextLikeStep.html" title="class in com.google.code.play.selenium.step">PlayVerifyTextLikeStep</a>, <a href="../../../../../../com/google/code/play/selenium/step/VerifyEqualsStep.html" title="class in com.google.code.play.selenium.step">VerifyEqualsStep</a>, <a href="../../../../../../com/google/code/play/selenium/step/VerifyFalseStep.html" title="class in com.google.code.play.selenium.step">VerifyFalseStep</a>, <a href="../../../../../../com/google/code/play/selenium/step/VerifyNotEqualsStep.html" title="class in com.google.code.play.selenium.step">VerifyNotEqualsStep</a>, <a href="../../../../../../com/google/code/play/selenium/step/VerifyTrueStep.html" title="class in com.google.code.play.selenium.step">VerifyTrueStep</a>, <a href="../../../../../../com/google/code/play/selenium/step/WaitForEqualsStep.html" title="class in com.google.code.play.selenium.step">WaitForEqualsStep</a>, <a href="../../../../../../com/google/code/play/selenium/step/WaitForFalseStep.html" title="class in com.google.code.play.selenium.step">WaitForFalseStep</a>, <a href="../../../../../../com/google/code/play/selenium/step/WaitForNotEqualsStep.html" title="class in com.google.code.play.selenium.step">WaitForNotEqualsStep</a>, <a href="../../../../../../com/google/code/play/selenium/step/WaitForTrueStep.html" title="class in com.google.code.play.selenium.step">WaitForTrueStep</a></dd>
+<dd><a href="../../../../../../com/google/code/play/selenium/step/AbstractTimedSeleniumStep.html" title="class in com.google.code.play.selenium.step">AbstractTimedSeleniumStep</a>, <a href="../../../../../../com/google/code/play/selenium/step/AssertEqualsStep.html" title="class in com.google.code.play.selenium.step">AssertEqualsStep</a>, <a href="../../../../../../com/google/code/play/selenium/step/AssertFalseStep.html" title="class in com.google.code.play.selenium.step">AssertFalseStep</a>, <a href="../../../../../../com/google/code/play/selenium/step/AssertNotEqualsStep.html" title="class in com.google.code.play.selenium.step">AssertNotEqualsStep</a>, <a href="../../../../../../com/google/code/play/selenium/step/AssertStep.html" title="class in com.google.code.play.selenium.step">AssertStep</a>, <a href="../../../../../../com/google/code/play/selenium/step/AssertTrueStep.html" title="class in com.google.code.play.selenium.step">AssertTrueStep</a>, <a href="../../../../../../com/google/code/play/selenium/step/BreakStep.html" title="class in com.google.code.play.selenium.step">BreakStep</a>, <a href="../../../../../../com/google/code/play/selenium/step/CommandStep.html" title="class in com.google.code.play.selenium.step">CommandStep</a>, <a href="../../../../../../com/google/code/play/selenium/step/EchoStep.html" title="class in com.google.code.play.selenium.step">EchoStep</a>, <a href="../../../../../../com/google/code/play/selenium/step/PauseStep.html" title="class in com.google.code.play.selenium.step">PauseStep</a>, <a href="../../../../../../com/google/code/play/selenium/step/VerifyEqualsStep.html" title="class in com.google.code.play.selenium.step">VerifyEqualsStep</a>, <a href="../../../../../../com/google/code/play/selenium/step/VerifyFalseStep.html" title="class in com.google.code.play.selenium.step">VerifyFalseStep</a>, <a href="../../../../../../com/google/code/play/selenium/step/VerifyNotEqualsStep.html" title="class in com.google.code.play.selenium.step">VerifyNotEqualsStep</a>, <a href="../../../../../../com/google/code/play/selenium/step/VerifyStep.html" title="class in com.google.code.play.selenium.step">VerifyStep</a>, <a href="../../../../../../com/google/code/play/selenium/step/VerifyTrueStep.html" title="class in com.google.code.play.selenium.step">VerifyTrueStep</a></dd>
 </dl>
 <hr>
 <br>
@@ -330,7 +316,7 @@ implements <a href="../../../../../../com/google/code/play/selenium/Step.html" t
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../../../com/google/code/play/selenium/step/AbstractSeleniumCommand.html" title="class in com.google.code.play.selenium.step"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../../../com/google/code/play/selenium/step/AndWaitStep.html" title="class in com.google.code.play.selenium.step"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../../../com/google/code/play/selenium/step/AbstractTimedSeleniumStep.html" title="class in com.google.code.play.selenium.step"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../../index.html?com/google/code/play/selenium/step/AbstractSeleniumStep.html" target="_top">Frames</a></li>
@@ -370,6 +356,6 @@ implements <a href="../../../../../../com/google/code/play/selenium/Step.html" t
 <!--   -->
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
-<p class="legalCopy"><small>Copyright &#169; 2010&#x2013;2015. All rights reserved.</small></p>
+<p class="legalCopy"><small>Copyright &#169; 2010&#x2013;2016. All rights reserved.</small></p>
 </body>
 </html>

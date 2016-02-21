@@ -10,26 +10,26 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// com.google.code.play.selenium.step.WaitForTrueStep
-	c2006 [label=<<table title="com.google.code.play.selenium.step.WaitForTrueStep" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./WaitForTrueStep.html">
+	c1833 [label=<<table title="com.google.code.play.selenium.step.WaitForTrueStep" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./WaitForTrueStep.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> WaitForTrueStep </td></tr>
 		</table></td></tr>
 		</table>>, URL="./WaitForTrueStep.html", fontname="arial", fontcolor="black", fontsize=9.0];
 	// com.google.code.play.selenium.step.BooleanSeleniumCommand
-	c2034 [label=<<table title="com.google.code.play.selenium.step.BooleanSeleniumCommand" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./BooleanSeleniumCommand.html">
+	c1857 [label=<<table title="com.google.code.play.selenium.step.BooleanSeleniumCommand" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./BooleanSeleniumCommand.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> BooleanSeleniumCommand </td></tr>
 		</table></td></tr>
 		</table>>, URL="./BooleanSeleniumCommand.html", fontname="arial", fontcolor="black", fontsize=9.0];
-	// com.google.code.play.selenium.step.AbstractSeleniumStep
-	c2041 [label=<<table title="com.google.code.play.selenium.step.AbstractSeleniumStep" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./AbstractSeleniumStep.html">
+	// com.google.code.play.selenium.step.AbstractTimedSeleniumStep
+	c1865 [label=<<table title="com.google.code.play.selenium.step.AbstractTimedSeleniumStep" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./AbstractTimedSeleniumStep.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="center" balign="center"><font face="arial italic"> AbstractSeleniumStep </font></td></tr>
+<tr><td align="center" balign="center"><font face="arial italic"> AbstractTimedSeleniumStep </font></td></tr>
 		</table></td></tr>
-		</table>>, URL="./AbstractSeleniumStep.html", fontname="arial", fontcolor="black", fontsize=9.0];
-	//com.google.code.play.selenium.step.WaitForTrueStep extends com.google.code.play.selenium.step.AbstractSeleniumStep
-	c2041:p -> c2006:p [dir=back,arrowtail=empty];
+		</table>>, URL="./AbstractTimedSeleniumStep.html", fontname="arial", fontcolor="black", fontsize=9.0];
+	//com.google.code.play.selenium.step.WaitForTrueStep extends com.google.code.play.selenium.step.AbstractTimedSeleniumStep
+	c1865:p -> c1833:p [dir=back,arrowtail=empty];
 	// com.google.code.play.selenium.step.WaitForTrueStep NAVASSOC com.google.code.play.selenium.step.BooleanSeleniumCommand
-	c2006:p -> c2034:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c1833:p -> c1857:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 }
 

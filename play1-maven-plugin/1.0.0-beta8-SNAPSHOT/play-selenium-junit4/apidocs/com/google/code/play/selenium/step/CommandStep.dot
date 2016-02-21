@@ -10,34 +10,42 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// com.google.code.play.selenium.step.VoidSeleniumCommand
-	c622 [label=<<table title="com.google.code.play.selenium.step.VoidSeleniumCommand" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./VoidSeleniumCommand.html">
+	c677 [label=<<table title="com.google.code.play.selenium.step.VoidSeleniumCommand" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./VoidSeleniumCommand.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> VoidSeleniumCommand </td></tr>
 		</table></td></tr>
 		</table>>, URL="./VoidSeleniumCommand.html", fontname="arial", fontcolor="black", fontsize=9.0];
 	// com.google.code.play.selenium.step.StoreStep
-	c631 [label=<<table title="com.google.code.play.selenium.step.StoreStep" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./StoreStep.html">
+	c687 [label=<<table title="com.google.code.play.selenium.step.StoreStep" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./StoreStep.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> StoreStep </td></tr>
 		</table></td></tr>
 		</table>>, URL="./StoreStep.html", fontname="arial", fontcolor="black", fontsize=9.0];
+	// com.google.code.play.selenium.step.SetTimeoutStep
+	c689 [label=<<table title="com.google.code.play.selenium.step.SetTimeoutStep" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./SetTimeoutStep.html">
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="center" balign="center"> SetTimeoutStep </td></tr>
+		</table></td></tr>
+		</table>>, URL="./SetTimeoutStep.html", fontname="arial", fontcolor="black", fontsize=9.0];
 	// com.google.code.play.selenium.step.CommandStep
-	c645 [label=<<table title="com.google.code.play.selenium.step.CommandStep" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./CommandStep.html">
+	c695 [label=<<table title="com.google.code.play.selenium.step.CommandStep" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./CommandStep.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> CommandStep </td></tr>
 		</table></td></tr>
 		</table>>, URL="./CommandStep.html", fontname="arial", fontcolor="black", fontsize=9.0];
 	// com.google.code.play.selenium.step.AbstractSeleniumStep
-	c653 [label=<<table title="com.google.code.play.selenium.step.AbstractSeleniumStep" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./AbstractSeleniumStep.html">
+	c706 [label=<<table title="com.google.code.play.selenium.step.AbstractSeleniumStep" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./AbstractSeleniumStep.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="arial italic"> AbstractSeleniumStep </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="./AbstractSeleniumStep.html", fontname="arial", fontcolor="black", fontsize=9.0];
 	//com.google.code.play.selenium.step.StoreStep extends com.google.code.play.selenium.step.CommandStep
-	c645:p -> c631:p [dir=back,arrowtail=empty];
+	c695:p -> c687:p [dir=back,arrowtail=empty];
+	//com.google.code.play.selenium.step.SetTimeoutStep extends com.google.code.play.selenium.step.CommandStep
+	c695:p -> c689:p [dir=back,arrowtail=empty];
 	//com.google.code.play.selenium.step.CommandStep extends com.google.code.play.selenium.step.AbstractSeleniumStep
-	c653:p -> c645:p [dir=back,arrowtail=empty];
+	c706:p -> c695:p [dir=back,arrowtail=empty];
 	// com.google.code.play.selenium.step.CommandStep NAVASSOC com.google.code.play.selenium.step.VoidSeleniumCommand
-	c645:p -> c622:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c695:p -> c677:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 }
 

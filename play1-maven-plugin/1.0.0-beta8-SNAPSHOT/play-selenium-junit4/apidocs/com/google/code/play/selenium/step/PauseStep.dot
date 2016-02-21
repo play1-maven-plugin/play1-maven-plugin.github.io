@@ -10,27 +10,27 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// com.google.code.play.selenium.StoredVars
-	c882 [label=<<table title="com.google.code.play.selenium.StoredVars" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../StoredVars.html">
+	c925 [label=<<table title="com.google.code.play.selenium.StoredVars" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../StoredVars.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> StoredVars </td></tr>
 <tr><td align="center" balign="center"><font point-size="7.0"> com.google.code.play.selenium </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="../StoredVars.html", fontname="arial", fontcolor="black", fontsize=9.0];
 	// com.google.code.play.selenium.step.PauseStep
-	c908 [label=<<table title="com.google.code.play.selenium.step.PauseStep" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./PauseStep.html">
+	c946 [label=<<table title="com.google.code.play.selenium.step.PauseStep" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./PauseStep.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> PauseStep </td></tr>
 		</table></td></tr>
 		</table>>, URL="./PauseStep.html", fontname="arial", fontcolor="black", fontsize=9.0];
 	// com.google.code.play.selenium.step.AbstractSeleniumStep
-	c921 [label=<<table title="com.google.code.play.selenium.step.AbstractSeleniumStep" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./AbstractSeleniumStep.html">
+	c962 [label=<<table title="com.google.code.play.selenium.step.AbstractSeleniumStep" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./AbstractSeleniumStep.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="arial italic"> AbstractSeleniumStep </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="./AbstractSeleniumStep.html", fontname="arial", fontcolor="black", fontsize=9.0];
 	//com.google.code.play.selenium.step.PauseStep extends com.google.code.play.selenium.step.AbstractSeleniumStep
-	c921:p -> c908:p [dir=back,arrowtail=empty];
+	c962:p -> c946:p [dir=back,arrowtail=empty];
 	// com.google.code.play.selenium.step.PauseStep NAVASSOC com.google.code.play.selenium.StoredVars
-	c908:p -> c882:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c946:p -> c925:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 }
 

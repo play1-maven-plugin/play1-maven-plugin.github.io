@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="c1295" href="./Timeout.html" title="com.google.code.play.selenium.Timeout" alt="" coords="179,113,243,137"/>
+<area shape="rect" id="node1" href="./Timeout.html" title="&lt;TABLE&gt;" alt="" coords="168,101,253,149"/>
+<area shape="rect" id="c1316" href="./step/SetTimeoutStep.html" title="com.google.code.play.selenium.step.SetTimeoutStep" alt="" coords="15,11,187,47"/>
+<area shape="rect" id="node2" href="./step/SetTimeoutStep.html" title="&lt;TABLE&gt;" alt="" coords="5,5,197,53"/>
+<area shape="rect" id="c1332" href="./step/AbstractTimedSeleniumStep.html" title="com.google.code.play.selenium.step.AbstractTimedSeleniumStep" alt="" coords="231,11,409,47"/>
+<area shape="rect" id="node3" href="./step/AbstractTimedSeleniumStep.html" title="&lt;TABLE&gt;" alt="" coords="221,5,419,53"/>
+</map>

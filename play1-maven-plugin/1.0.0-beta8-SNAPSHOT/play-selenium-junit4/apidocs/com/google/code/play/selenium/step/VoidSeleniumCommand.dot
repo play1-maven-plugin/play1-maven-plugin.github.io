@@ -10,34 +10,50 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// com.google.code.play.selenium.step.VoidSeleniumCommand
-	c1838 [label=<<table title="com.google.code.play.selenium.step.VoidSeleniumCommand" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./VoidSeleniumCommand.html">
+	c1673 [label=<<table title="com.google.code.play.selenium.step.VoidSeleniumCommand" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./VoidSeleniumCommand.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> VoidSeleniumCommand </td></tr>
 		</table></td></tr>
 		</table>>, URL="./VoidSeleniumCommand.html", fontname="arial", fontcolor="black", fontsize=9.0];
+	// com.google.code.play.selenium.step.VerifyStep
+	c1675 [label=<<table title="com.google.code.play.selenium.step.VerifyStep" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./VerifyStep.html">
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="center" balign="center"> VerifyStep </td></tr>
+		</table></td></tr>
+		</table>>, URL="./VerifyStep.html", fontname="arial", fontcolor="black", fontsize=9.0];
 	// com.google.code.play.selenium.step.CommandStep
-	c1861 [label=<<table title="com.google.code.play.selenium.step.CommandStep" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./CommandStep.html">
+	c1691 [label=<<table title="com.google.code.play.selenium.step.CommandStep" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./CommandStep.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> CommandStep </td></tr>
 		</table></td></tr>
 		</table>>, URL="./CommandStep.html", fontname="arial", fontcolor="black", fontsize=9.0];
+	// com.google.code.play.selenium.step.AssertStep
+	c1695 [label=<<table title="com.google.code.play.selenium.step.AssertStep" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./AssertStep.html">
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="center" balign="center"> AssertStep </td></tr>
+		</table></td></tr>
+		</table>>, URL="./AssertStep.html", fontname="arial", fontcolor="black", fontsize=9.0];
 	// com.google.code.play.selenium.step.AndWaitStep
-	c1868 [label=<<table title="com.google.code.play.selenium.step.AndWaitStep" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./AndWaitStep.html">
+	c1700 [label=<<table title="com.google.code.play.selenium.step.AndWaitStep" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./AndWaitStep.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> AndWaitStep </td></tr>
 		</table></td></tr>
 		</table>>, URL="./AndWaitStep.html", fontname="arial", fontcolor="black", fontsize=9.0];
 	// com.google.code.play.selenium.step.AbstractSeleniumCommand
-	c1870 [label=<<table title="com.google.code.play.selenium.step.AbstractSeleniumCommand" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./AbstractSeleniumCommand.html">
+	c1703 [label=<<table title="com.google.code.play.selenium.step.AbstractSeleniumCommand" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./AbstractSeleniumCommand.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="arial italic"> AbstractSeleniumCommand </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="./AbstractSeleniumCommand.html", fontname="arial", fontcolor="black", fontsize=9.0];
 	//com.google.code.play.selenium.step.VoidSeleniumCommand extends com.google.code.play.selenium.step.AbstractSeleniumCommand
-	c1870:p -> c1838:p [dir=back,arrowtail=empty];
+	c1703:p -> c1673:p [dir=back,arrowtail=empty];
+	// com.google.code.play.selenium.step.VerifyStep NAVASSOC com.google.code.play.selenium.step.VoidSeleniumCommand
+	c1675:p -> c1673:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 	// com.google.code.play.selenium.step.CommandStep NAVASSOC com.google.code.play.selenium.step.VoidSeleniumCommand
-	c1861:p -> c1838:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c1691:p -> c1673:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	// com.google.code.play.selenium.step.AssertStep NAVASSOC com.google.code.play.selenium.step.VoidSeleniumCommand
+	c1695:p -> c1673:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 	// com.google.code.play.selenium.step.AndWaitStep NAVASSOC com.google.code.play.selenium.step.VoidSeleniumCommand
-	c1868:p -> c1838:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c1700:p -> c1673:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 }
 

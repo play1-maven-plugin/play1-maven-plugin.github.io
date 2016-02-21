@@ -10,26 +10,35 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// com.google.code.play.selenium.PlaySeleniumTest
-	c1143 [label=<<table title="com.google.code.play.selenium.PlaySeleniumTest" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./PlaySeleniumTest.html">
+	c969 [label=<<table title="com.google.code.play.selenium.PlaySeleniumTest" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./PlaySeleniumTest.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="arial italic"> PlaySeleniumTest </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="./PlaySeleniumTest.html", fontname="arial", fontcolor="black", fontsize=9.0];
 	// com.google.code.play.selenium.step.StringSeleniumCommand
-	c1156 [label=<<table title="com.google.code.play.selenium.step.StringSeleniumCommand" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./step/StringSeleniumCommand.html">
+	c983 [label=<<table title="com.google.code.play.selenium.step.StringSeleniumCommand" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./step/StringSeleniumCommand.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> StringSeleniumCommand </td></tr>
 <tr><td align="center" balign="center"><font point-size="7.0"> com.google.code.play.selenium.step </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="./step/StringSeleniumCommand.html", fontname="arial", fontcolor="black", fontsize=9.0];
+	// com.google.code.play.selenium.step.BooleanSeleniumCommand
+	c994 [label=<<table title="com.google.code.play.selenium.step.BooleanSeleniumCommand" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./step/BooleanSeleniumCommand.html">
+		<tr><td><table border="0" cellspacing="0" cellpadding="1">
+<tr><td align="center" balign="center"> BooleanSeleniumCommand </td></tr>
+<tr><td align="center" balign="center"><font point-size="7.0"> com.google.code.play.selenium.step </font></td></tr>
+		</table></td></tr>
+		</table>>, URL="./step/BooleanSeleniumCommand.html", fontname="arial", fontcolor="black", fontsize=9.0];
 	// com.google.code.play.selenium.PlaySeleniumTest NAVASSOC com.thoughtworks.selenium.CommandProcessor
-	c1143:p -> c1182:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c969:p -> c1005:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 	// com.google.code.play.selenium.PlaySeleniumTest NAVASSOC com.thoughtworks.selenium.Selenium
-	c1143:p -> c1183:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c969:p -> c1006:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	// com.google.code.play.selenium.PlaySeleniumTest DEPEND com.google.code.play.selenium.step.BooleanSeleniumCommand
+	c969:p -> c994:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
 	// com.google.code.play.selenium.PlaySeleniumTest DEPEND com.google.code.play.selenium.step.StringSeleniumCommand
-	c1143:p -> c1156:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
+	c969:p -> c983:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
 	// com.thoughtworks.selenium.Selenium
-	c1183 [label=<<table title="com.thoughtworks.selenium.Selenium" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c1006 [label=<<table title="com.thoughtworks.selenium.Selenium" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Selenium </td></tr>
@@ -37,7 +46,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="null", fontname="arial", fontcolor="black", fontsize=9.0];
 	// com.thoughtworks.selenium.CommandProcessor
-	c1182 [label=<<table title="com.thoughtworks.selenium.CommandProcessor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c1005 [label=<<table title="com.thoughtworks.selenium.CommandProcessor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> CommandProcessor </td></tr>

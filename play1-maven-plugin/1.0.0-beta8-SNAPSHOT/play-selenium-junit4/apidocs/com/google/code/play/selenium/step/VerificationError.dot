@@ -10,7 +10,7 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// com.google.code.play.selenium.step.VerificationError
-	c1544 [label=<<table title="com.google.code.play.selenium.step.VerificationError" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./VerificationError.html">
+	c1353 [label=<<table title="com.google.code.play.selenium.step.VerificationError" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./VerificationError.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> VerificationError </td></tr>
 		</table></td></tr>

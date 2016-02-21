@@ -1,8 +1,8 @@
 <map id="G" name="G">
-<area shape="rect" id="c1964" href="./WaitForNotEqualsStep.html" title="com.google.code.play.selenium.step.WaitForNotEqualsStep" alt="" coords="25,113,169,137"/>
-<area shape="rect" id="node1" href="./WaitForNotEqualsStep.html" title="&lt;TABLE&gt;" alt="" coords="15,101,180,149"/>
-<area shape="rect" id="c1975" href="./StringSeleniumCommand.html" title="com.google.code.play.selenium.step.StringSeleniumCommand" alt="" coords="16,209,179,233"/>
-<area shape="rect" id="node2" href="./StringSeleniumCommand.html" title="&lt;TABLE&gt;" alt="" coords="5,197,189,245"/>
-<area shape="rect" id="c1998" href="./AbstractSeleniumStep.html" title="com.google.code.play.selenium.step.AbstractSeleniumStep" alt="" coords="27,17,168,41"/>
-<area shape="rect" id="node3" href="./AbstractSeleniumStep.html" title="&lt;TABLE&gt;" alt="" coords="16,5,179,53"/>
+<area shape="rect" id="c1793" href="./WaitForNotEqualsStep.html" title="com.google.code.play.selenium.step.WaitForNotEqualsStep" alt="" coords="32,113,176,137"/>
+<area shape="rect" id="node1" href="./WaitForNotEqualsStep.html" title="&lt;TABLE&gt;" alt="" coords="21,101,187,149"/>
+<area shape="rect" id="c1805" href="./StringSeleniumCommand.html" title="com.google.code.play.selenium.step.StringSeleniumCommand" alt="" coords="23,209,185,233"/>
+<area shape="rect" id="node2" href="./StringSeleniumCommand.html" title="&lt;TABLE&gt;" alt="" coords="12,197,196,245"/>
+<area shape="rect" id="c1824" href="./AbstractTimedSeleniumStep.html" title="com.google.code.play.selenium.step.AbstractTimedSeleniumStep" alt="" coords="15,17,193,41"/>
+<area shape="rect" id="node3" href="./AbstractTimedSeleniumStep.html" title="&lt;TABLE&gt;" alt="" coords="5,5,203,53"/>
 </map>
