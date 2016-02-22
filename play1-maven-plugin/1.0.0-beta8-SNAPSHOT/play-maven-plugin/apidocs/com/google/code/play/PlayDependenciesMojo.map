@@ -1,7 +1,8 @@
 <map id="G" name="G">
 <area shape="rect" id="c755" href="./PlayDependenciesMojo.html" title="com.google.code.play.PlayDependenciesMojo" alt="" coords="429,113,579,137"/>
 <area shape="rect" id="node1" href="./PlayDependenciesMojo.html" title="&lt;TABLE&gt;" alt="" coords="419,101,589,149"/>
-<area shape="rect" id="node5" href="null" title="&lt;TABLE&gt;" alt="" coords="5,197,208,259"/>
+<area shape="rect" id="c771" href="http://play1-maven-plugin.github.io/external-apidocs/org/codehaus/plexus/plexus-archiver/2.10.3/org/codehaus/plexus/archiver/manager/ArchiverManager.html" title="org.codehaus.plexus.archiver.manager.ArchiverManager" alt="" coords="16,203,197,253"/>
+<area shape="rect" id="node5" href="http://play1-maven-plugin.github.io/external-apidocs/org/codehaus/plexus/plexus-archiver/2.10.3/org/codehaus/plexus/archiver/manager/ArchiverManager.html" title="&lt;TABLE&gt;" alt="" coords="5,197,208,259"/>
 <area shape="rect" id="c772" href="http://maven.apache.org/ref/2.2.1/maven-project/apidocs/org/apache/maven/project/MavenProject.html" title="org.apache.maven.project.MavenProject" alt="" coords="243,210,371,246"/>
 <area shape="rect" id="node7" href="http://maven.apache.org/ref/2.2.1/maven-project/apidocs/org/apache/maven/project/MavenProject.html" title="&lt;TABLE&gt;" alt="" coords="232,204,381,252"/>
 <area shape="rect" id="node9" href="null" title="&lt;TABLE&gt;" alt="" coords="405,197,603,259"/>

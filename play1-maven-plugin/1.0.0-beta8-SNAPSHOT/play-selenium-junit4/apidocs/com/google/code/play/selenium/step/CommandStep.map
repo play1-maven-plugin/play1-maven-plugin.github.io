@@ -1,12 +1,12 @@
 <map id="G" name="G">
-<area shape="rect" id="c677" href="./VoidSeleniumCommand.html" title="com.google.code.play.selenium.step.VoidSeleniumCommand" alt="" coords="16,209,171,233"/>
+<area shape="rect" id="c678" href="./VoidSeleniumCommand.html" title="com.google.code.play.selenium.step.VoidSeleniumCommand" alt="" coords="16,209,171,233"/>
 <area shape="rect" id="node1" href="./VoidSeleniumCommand.html" title="&lt;TABLE&gt;" alt="" coords="5,197,181,245"/>
-<area shape="rect" id="c687" href="./StoreStep.html" title="com.google.code.play.selenium.step.StoreStep" alt="" coords="215,209,289,233"/>
+<area shape="rect" id="c688" href="./StoreStep.html" title="com.google.code.play.selenium.step.StoreStep" alt="" coords="215,209,289,233"/>
 <area shape="rect" id="node2" href="./StoreStep.html" title="&lt;TABLE&gt;" alt="" coords="205,197,299,245"/>
-<area shape="rect" id="c689" href="./SetTimeoutStep.html" title="com.google.code.play.selenium.step.SetTimeoutStep" alt="" coords="333,209,440,233"/>
+<area shape="rect" id="c690" href="./SetTimeoutStep.html" title="com.google.code.play.selenium.step.SetTimeoutStep" alt="" coords="333,209,440,233"/>
 <area shape="rect" id="node3" href="./SetTimeoutStep.html" title="&lt;TABLE&gt;" alt="" coords="323,197,451,245"/>
-<area shape="rect" id="c695" href="./CommandStep.html" title="com.google.code.play.selenium.step.CommandStep" alt="" coords="201,113,303,137"/>
+<area shape="rect" id="c696" href="./CommandStep.html" title="com.google.code.play.selenium.step.CommandStep" alt="" coords="201,113,303,137"/>
 <area shape="rect" id="node4" href="./CommandStep.html" title="&lt;TABLE&gt;" alt="" coords="191,101,313,149"/>
-<area shape="rect" id="c706" href="./AbstractSeleniumStep.html" title="com.google.code.play.selenium.step.AbstractSeleniumStep" alt="" coords="181,17,323,41"/>
+<area shape="rect" id="c707" href="./AbstractSeleniumStep.html" title="com.google.code.play.selenium.step.AbstractSeleniumStep" alt="" coords="181,17,323,41"/>
 <area shape="rect" id="node5" href="./AbstractSeleniumStep.html" title="&lt;TABLE&gt;" alt="" coords="171,5,333,53"/>
 </map>

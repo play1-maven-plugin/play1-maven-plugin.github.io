@@ -17,41 +17,41 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="../StoredVars.html", fontname="arial", fontcolor="black", fontsize=9.0];
 	// com.google.code.play.selenium.step.VoidSeleniumCommand
-	c154 [label=<<table title="com.google.code.play.selenium.step.VoidSeleniumCommand" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./VoidSeleniumCommand.html">
+	c155 [label=<<table title="com.google.code.play.selenium.step.VoidSeleniumCommand" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./VoidSeleniumCommand.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> VoidSeleniumCommand </td></tr>
 		</table></td></tr>
 		</table>>, URL="./VoidSeleniumCommand.html", fontname="arial", fontcolor="black", fontsize=9.0];
 	// com.google.code.play.selenium.step.StringSeleniumCommand
-	c173 [label=<<table title="com.google.code.play.selenium.step.StringSeleniumCommand" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./StringSeleniumCommand.html">
+	c174 [label=<<table title="com.google.code.play.selenium.step.StringSeleniumCommand" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./StringSeleniumCommand.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> StringSeleniumCommand </td></tr>
 		</table></td></tr>
 		</table>>, URL="./StringSeleniumCommand.html", fontname="arial", fontcolor="black", fontsize=9.0];
 	// com.google.code.play.selenium.step.BooleanSeleniumCommand
-	c195 [label=<<table title="com.google.code.play.selenium.step.BooleanSeleniumCommand" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./BooleanSeleniumCommand.html">
+	c196 [label=<<table title="com.google.code.play.selenium.step.BooleanSeleniumCommand" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./BooleanSeleniumCommand.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> BooleanSeleniumCommand </td></tr>
 		</table></td></tr>
 		</table>>, URL="./BooleanSeleniumCommand.html", fontname="arial", fontcolor="black", fontsize=9.0];
 	// com.google.code.play.selenium.step.AbstractSeleniumCommand
-	c212 [label=<<table title="com.google.code.play.selenium.step.AbstractSeleniumCommand" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./AbstractSeleniumCommand.html">
+	c213 [label=<<table title="com.google.code.play.selenium.step.AbstractSeleniumCommand" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./AbstractSeleniumCommand.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="arial italic"> AbstractSeleniumCommand </font></td></tr>
 		</table></td></tr>
 		</table>>, URL="./AbstractSeleniumCommand.html", fontname="arial", fontcolor="black", fontsize=9.0];
 	//com.google.code.play.selenium.step.VoidSeleniumCommand extends com.google.code.play.selenium.step.AbstractSeleniumCommand
-	c212:p -> c154:p [dir=back,arrowtail=empty];
+	c213:p -> c155:p [dir=back,arrowtail=empty];
 	//com.google.code.play.selenium.step.StringSeleniumCommand extends com.google.code.play.selenium.step.AbstractSeleniumCommand
-	c212:p -> c173:p [dir=back,arrowtail=empty];
+	c213:p -> c174:p [dir=back,arrowtail=empty];
 	//com.google.code.play.selenium.step.BooleanSeleniumCommand extends com.google.code.play.selenium.step.AbstractSeleniumCommand
-	c212:p -> c195:p [dir=back,arrowtail=empty];
+	c213:p -> c196:p [dir=back,arrowtail=empty];
 	// com.google.code.play.selenium.step.AbstractSeleniumCommand NAVASSOC com.google.code.play.selenium.StoredVars
-	c212:p -> c134:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c213:p -> c134:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 	// com.google.code.play.selenium.step.AbstractSeleniumCommand NAVASSOC com.thoughtworks.selenium.CommandProcessor
-	c212:p -> c215:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c213:p -> c216:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 	// com.thoughtworks.selenium.CommandProcessor
-	c215 [label=<<table title="com.thoughtworks.selenium.CommandProcessor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c216 [label=<<table title="com.thoughtworks.selenium.CommandProcessor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> CommandProcessor </td></tr>

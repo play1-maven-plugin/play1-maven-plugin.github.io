@@ -7,7 +7,7 @@
 <body>
 <div id="overview"><a href="../../../../../../apidocs/com/google/code/play/selenium/PlaySeleniumTest.html">View Javadoc</a></div><pre>
 <a class="jxr_linenumber" name="L1" href="#L1">1</a>   <em class="jxr_comment">/*</em>
-<a class="jxr_linenumber" name="L2" href="#L2">2</a>   <em class="jxr_comment"> * Copyright 2010-2015 Grzegorz Slowikowski</em>
+<a class="jxr_linenumber" name="L2" href="#L2">2</a>   <em class="jxr_comment"> * Copyright 2010-2016 Grzegorz Slowikowski</em>
 <a class="jxr_linenumber" name="L3" href="#L3">3</a>   <em class="jxr_comment"> *</em>
 <a class="jxr_linenumber" name="L4" href="#L4">4</a>   <em class="jxr_comment"> * Licensed under the Apache License, Version 2.0 (the "License");</em>
 <a class="jxr_linenumber" name="L5" href="#L5">5</a>   <em class="jxr_comment"> * you may not use this file except in compliance with the License.</em>
@@ -567,8 +567,8 @@
 <a class="jxr_linenumber" name="L559" href="#L559">559</a>     <strong class="jxr_keyword">private</strong> <strong class="jxr_keyword">void</strong> executeTestSteps( List&lt;Step&gt; steps )
 <a class="jxr_linenumber" name="L560" href="#L560">560</a>         <strong class="jxr_keyword">throws</strong> Exception
 <a class="jxr_linenumber" name="L561" href="#L561">561</a>     {
-<a class="jxr_linenumber" name="L562" href="#L562">562</a>         StringBuffer testTraceBuf = <strong class="jxr_keyword">new</strong> StringBuffer();
-<a class="jxr_linenumber" name="L563" href="#L563">563</a>         StringBuffer verificationFailuresBuf = <strong class="jxr_keyword">new</strong> StringBuffer();
+<a class="jxr_linenumber" name="L562" href="#L562">562</a>         StringBuilder testTraceBuf = <strong class="jxr_keyword">new</strong> StringBuilder();
+<a class="jxr_linenumber" name="L563" href="#L563">563</a>         StringBuilder verificationFailuresBuf = <strong class="jxr_keyword">new</strong> StringBuilder();
 <a class="jxr_linenumber" name="L564" href="#L564">564</a>         <strong class="jxr_keyword">int</strong> line = 0;
 <a class="jxr_linenumber" name="L565" href="#L565">565</a>         <strong class="jxr_keyword">for</strong> ( Step step : steps )
 <a class="jxr_linenumber" name="L566" href="#L566">566</a>         {
@@ -588,145 +588,130 @@
 <a class="jxr_linenumber" name="L580" href="#L580">580</a>             }
 <a class="jxr_linenumber" name="L581" href="#L581">581</a>             <strong class="jxr_keyword">catch</strong> ( VerificationError e )
 <a class="jxr_linenumber" name="L582" href="#L582">582</a>             {
-<a class="jxr_linenumber" name="L583" href="#L583">583</a>                 String msg = e.getMessage();
-<a class="jxr_linenumber" name="L584" href="#L584">584</a>                 String logLine = dumpTestStepWhenError( line, step, msg );
-<a class="jxr_linenumber" name="L585" href="#L585">585</a>                 <strong class="jxr_keyword">if</strong> ( traceTest )
-<a class="jxr_linenumber" name="L586" href="#L586">586</a>                 {
-<a class="jxr_linenumber" name="L587" href="#L587">587</a>                     System.out.println( logLine );
-<a class="jxr_linenumber" name="L588" href="#L588">588</a>                 }
-<a class="jxr_linenumber" name="L589" href="#L589">589</a>                 <strong class="jxr_keyword">else</strong>
-<a class="jxr_linenumber" name="L590" href="#L590">590</a>                 {
-<a class="jxr_linenumber" name="L591" href="#L591">591</a>                     testTraceBuf.append( logLine ).append( '\n' );
-<a class="jxr_linenumber" name="L592" href="#L592">592</a>                 }
-<a class="jxr_linenumber" name="L593" href="#L593">593</a>                 verificationFailuresBuf.append( '\n' ).append( e.getMessage() );
-<a class="jxr_linenumber" name="L594" href="#L594">594</a>             }
-<a class="jxr_linenumber" name="L595" href="#L595">595</a>             <strong class="jxr_keyword">catch</strong> ( AssertionError e )
-<a class="jxr_linenumber" name="L596" href="#L596">596</a>             {
-<a class="jxr_linenumber" name="L597" href="#L597">597</a>                 String msg = e.getMessage();
-<a class="jxr_linenumber" name="L598" href="#L598">598</a>                 String logLine = dumpTestStepWhenError( line, step, msg );
-<a class="jxr_linenumber" name="L599" href="#L599">599</a>                 <strong class="jxr_keyword">if</strong> ( traceTest )
-<a class="jxr_linenumber" name="L600" href="#L600">600</a>                 {
-<a class="jxr_linenumber" name="L601" href="#L601">601</a>                     System.out.println( logLine );
-<a class="jxr_linenumber" name="L602" href="#L602">602</a>                 }
-<a class="jxr_linenumber" name="L603" href="#L603">603</a>                 <strong class="jxr_keyword">else</strong>
-<a class="jxr_linenumber" name="L604" href="#L604">604</a>                 {
-<a class="jxr_linenumber" name="L605" href="#L605">605</a>                     testTraceBuf.append( logLine );
-<a class="jxr_linenumber" name="L606" href="#L606">606</a>                     System.out.println( testTraceBuf.toString() );
-<a class="jxr_linenumber" name="L607" href="#L607">607</a>                 }
+<a class="jxr_linenumber" name="L583" href="#L583">583</a>                 logNonFatalProblem( line, step, e.getMessage(), testTraceBuf, verificationFailuresBuf );
+<a class="jxr_linenumber" name="L584" href="#L584">584</a>             }
+<a class="jxr_linenumber" name="L585" href="#L585">585</a>             <strong class="jxr_keyword">catch</strong> ( AssertionError e )
+<a class="jxr_linenumber" name="L586" href="#L586">586</a>             {
+<a class="jxr_linenumber" name="L587" href="#L587">587</a>                 logFatalProblem( line, step, e.getMessage(), testTraceBuf, verificationFailuresBuf );
+<a class="jxr_linenumber" name="L588" href="#L588">588</a>                 <strong class="jxr_keyword">throw</strong> e;
+<a class="jxr_linenumber" name="L589" href="#L589">589</a>             }
+<a class="jxr_linenumber" name="L590" href="#L590">590</a>             <strong class="jxr_keyword">catch</strong> ( SeleniumException e )
+<a class="jxr_linenumber" name="L591" href="#L591">591</a>             {
+<a class="jxr_linenumber" name="L592" href="#L592">592</a>                 String msg = e.getMessage();
+<a class="jxr_linenumber" name="L593" href="#L593">593</a>                 <strong class="jxr_keyword">boolean</strong> isError = msg.startsWith( <span class="jxr_string">"ERROR: "</span> );
+<a class="jxr_linenumber" name="L594" href="#L594">594</a>                 <strong class="jxr_keyword">if</strong> ( isError )
+<a class="jxr_linenumber" name="L595" href="#L595">595</a>                 {
+<a class="jxr_linenumber" name="L596" href="#L596">596</a>                     msg = msg.substring( <span class="jxr_string">"ERROR: "</span>.length() );
+<a class="jxr_linenumber" name="L597" href="#L597">597</a>                     logFatalProblem( line, step, msg, testTraceBuf, verificationFailuresBuf );
+<a class="jxr_linenumber" name="L598" href="#L598">598</a>                     <strong class="jxr_keyword">throw</strong> e;
+<a class="jxr_linenumber" name="L599" href="#L599">599</a>                 }
+<a class="jxr_linenumber" name="L600" href="#L600">600</a>                 <strong class="jxr_keyword">else</strong>
+<a class="jxr_linenumber" name="L601" href="#L601">601</a>                 {
+<a class="jxr_linenumber" name="L602" href="#L602">602</a>                     logNonFatalProblem( line, step, msg, testTraceBuf, verificationFailuresBuf );
+<a class="jxr_linenumber" name="L603" href="#L603">603</a>                 }
+<a class="jxr_linenumber" name="L604" href="#L604">604</a>             }
+<a class="jxr_linenumber" name="L605" href="#L605">605</a>             <strong class="jxr_keyword">catch</strong> ( RuntimeException e ) <em class="jxr_comment">// 'testTraceBuf' must be dumped before continuing</em>
+<a class="jxr_linenumber" name="L606" href="#L606">606</a>             {
+<a class="jxr_linenumber" name="L607" href="#L607">607</a>                 logFatalProblem( line, step, e.getMessage(), testTraceBuf, verificationFailuresBuf );
 <a class="jxr_linenumber" name="L608" href="#L608">608</a>                 <strong class="jxr_keyword">throw</strong> e;
 <a class="jxr_linenumber" name="L609" href="#L609">609</a>             }
-<a class="jxr_linenumber" name="L610" href="#L610">610</a>             <strong class="jxr_keyword">catch</strong> ( SeleniumException e )
+<a class="jxr_linenumber" name="L610" href="#L610">610</a>             <strong class="jxr_keyword">catch</strong> ( Error e ) <em class="jxr_comment">// 'testTraceBuf' must be dumped before continuing</em>
 <a class="jxr_linenumber" name="L611" href="#L611">611</a>             {
-<a class="jxr_linenumber" name="L612" href="#L612">612</a>                 String msg = e.getMessage();
-<a class="jxr_linenumber" name="L613" href="#L613">613</a>                 <strong class="jxr_keyword">if</strong> ( msg.startsWith( <span class="jxr_string">"ERROR: "</span> ) )
-<a class="jxr_linenumber" name="L614" href="#L614">614</a>                 {
-<a class="jxr_linenumber" name="L615" href="#L615">615</a>                     msg = msg.substring( <span class="jxr_string">"ERROR: "</span>.length() );
-<a class="jxr_linenumber" name="L616" href="#L616">616</a>                 }
-<a class="jxr_linenumber" name="L617" href="#L617">617</a>                 String logLine = dumpTestStepWhenError( line, step, msg );
-<a class="jxr_linenumber" name="L618" href="#L618">618</a>                 <strong class="jxr_keyword">if</strong> ( traceTest )
-<a class="jxr_linenumber" name="L619" href="#L619">619</a>                 {
-<a class="jxr_linenumber" name="L620" href="#L620">620</a>                     System.out.println( logLine );
-<a class="jxr_linenumber" name="L621" href="#L621">621</a>                 }
-<a class="jxr_linenumber" name="L622" href="#L622">622</a>                 <strong class="jxr_keyword">else</strong>
-<a class="jxr_linenumber" name="L623" href="#L623">623</a>                 {
-<a class="jxr_linenumber" name="L624" href="#L624">624</a>                     testTraceBuf.append( logLine );
-<a class="jxr_linenumber" name="L625" href="#L625">625</a>                     System.out.println( testTraceBuf.toString() );
-<a class="jxr_linenumber" name="L626" href="#L626">626</a>                 }
-<a class="jxr_linenumber" name="L627" href="#L627">627</a>                 <strong class="jxr_keyword">throw</strong> e;
-<a class="jxr_linenumber" name="L628" href="#L628">628</a>             }
-<a class="jxr_linenumber" name="L629" href="#L629">629</a>             <strong class="jxr_keyword">catch</strong> ( RuntimeException e ) <em class="jxr_comment">// 'testTraceBuf' must be dumped before continuing</em>
-<a class="jxr_linenumber" name="L630" href="#L630">630</a>             {
-<a class="jxr_linenumber" name="L631" href="#L631">631</a>                 String msg = e.getMessage();
-<a class="jxr_linenumber" name="L632" href="#L632">632</a>                 String logLine = dumpTestStepWhenError( line, step, msg );
-<a class="jxr_linenumber" name="L633" href="#L633">633</a>                 <strong class="jxr_keyword">if</strong> ( traceTest )
-<a class="jxr_linenumber" name="L634" href="#L634">634</a>                 {
-<a class="jxr_linenumber" name="L635" href="#L635">635</a>                     System.out.println( logLine );
-<a class="jxr_linenumber" name="L636" href="#L636">636</a>                 }
-<a class="jxr_linenumber" name="L637" href="#L637">637</a>                 <strong class="jxr_keyword">else</strong>
-<a class="jxr_linenumber" name="L638" href="#L638">638</a>                 {
-<a class="jxr_linenumber" name="L639" href="#L639">639</a>                     testTraceBuf.append( logLine );
-<a class="jxr_linenumber" name="L640" href="#L640">640</a>                     System.out.println( testTraceBuf.toString() );
-<a class="jxr_linenumber" name="L641" href="#L641">641</a>                 }
-<a class="jxr_linenumber" name="L642" href="#L642">642</a>                 <strong class="jxr_keyword">throw</strong> e;
-<a class="jxr_linenumber" name="L643" href="#L643">643</a>             }
-<a class="jxr_linenumber" name="L644" href="#L644">644</a>             <strong class="jxr_keyword">catch</strong> ( Error e ) <em class="jxr_comment">// 'testTraceBuf' must be dumped before continuing</em>
-<a class="jxr_linenumber" name="L645" href="#L645">645</a>             {
-<a class="jxr_linenumber" name="L646" href="#L646">646</a>                 String msg = e.getMessage();
-<a class="jxr_linenumber" name="L647" href="#L647">647</a>                 String logLine = dumpTestStepWhenError( line, step, msg );
-<a class="jxr_linenumber" name="L648" href="#L648">648</a>                 <strong class="jxr_keyword">if</strong> ( traceTest )
-<a class="jxr_linenumber" name="L649" href="#L649">649</a>                 {
-<a class="jxr_linenumber" name="L650" href="#L650">650</a>                     System.out.println( logLine );
-<a class="jxr_linenumber" name="L651" href="#L651">651</a>                 }
-<a class="jxr_linenumber" name="L652" href="#L652">652</a>                 <strong class="jxr_keyword">else</strong>
-<a class="jxr_linenumber" name="L653" href="#L653">653</a>                 {
-<a class="jxr_linenumber" name="L654" href="#L654">654</a>                     testTraceBuf.append( logLine );
-<a class="jxr_linenumber" name="L655" href="#L655">655</a>                     System.out.println( testTraceBuf.toString() );
-<a class="jxr_linenumber" name="L656" href="#L656">656</a>                 }
-<a class="jxr_linenumber" name="L657" href="#L657">657</a>                 <strong class="jxr_keyword">throw</strong> e;
-<a class="jxr_linenumber" name="L658" href="#L658">658</a>             }
-<a class="jxr_linenumber" name="L659" href="#L659">659</a>         }
+<a class="jxr_linenumber" name="L612" href="#L612">612</a>                 logFatalProblem( line, step, e.getMessage(), testTraceBuf, verificationFailuresBuf );
+<a class="jxr_linenumber" name="L613" href="#L613">613</a>                 <strong class="jxr_keyword">throw</strong> e;
+<a class="jxr_linenumber" name="L614" href="#L614">614</a>             }
+<a class="jxr_linenumber" name="L615" href="#L615">615</a>         }
+<a class="jxr_linenumber" name="L616" href="#L616">616</a> 
+<a class="jxr_linenumber" name="L617" href="#L617">617</a>         <strong class="jxr_keyword">if</strong> ( verificationFailuresBuf.length() &gt; 0 )
+<a class="jxr_linenumber" name="L618" href="#L618">618</a>         {
+<a class="jxr_linenumber" name="L619" href="#L619">619</a>             <strong class="jxr_keyword">if</strong> ( !traceTest )
+<a class="jxr_linenumber" name="L620" href="#L620">620</a>             {
+<a class="jxr_linenumber" name="L621" href="#L621">621</a>                 System.out.println( testTraceBuf.toString() );
+<a class="jxr_linenumber" name="L622" href="#L622">622</a>             }
+<a class="jxr_linenumber" name="L623" href="#L623">623</a>             Assert.fail( <span class="jxr_string">"There are verification failures:"</span> + verificationFailuresBuf.toString() );
+<a class="jxr_linenumber" name="L624" href="#L624">624</a>         }
+<a class="jxr_linenumber" name="L625" href="#L625">625</a>     }
+<a class="jxr_linenumber" name="L626" href="#L626">626</a> 
+<a class="jxr_linenumber" name="L627" href="#L627">627</a>     <strong class="jxr_keyword">private</strong> String dumpTestStep( <strong class="jxr_keyword">int</strong> line, Step step )
+<a class="jxr_linenumber" name="L628" href="#L628">628</a>     {
+<a class="jxr_linenumber" name="L629" href="#L629">629</a>         <strong class="jxr_keyword">long</strong> executionTimeMillis = step.getExecutionTimeMillis();
+<a class="jxr_linenumber" name="L630" href="#L630">630</a> 
+<a class="jxr_linenumber" name="L631" href="#L631">631</a>         StringBuilder sb = <strong class="jxr_keyword">new</strong> StringBuilder();
+<a class="jxr_linenumber" name="L632" href="#L632">632</a>         sb.append( <span class="jxr_string">" "</span> );
+<a class="jxr_linenumber" name="L633" href="#L633">633</a>         sb.append( String.format( <span class="jxr_string">"%4s"</span>, line ) );
+<a class="jxr_linenumber" name="L634" href="#L634">634</a>         sb.append( <span class="jxr_string">": "</span> );
+<a class="jxr_linenumber" name="L635" href="#L635">635</a>         sb.append( step.toString() );
+<a class="jxr_linenumber" name="L636" href="#L636">636</a>         <strong class="jxr_keyword">if</strong> ( executionTimeMillis &gt;= 0 )
+<a class="jxr_linenumber" name="L637" href="#L637">637</a>         {
+<a class="jxr_linenumber" name="L638" href="#L638">638</a>             sb.append( <span class="jxr_string">" ["</span> );
+<a class="jxr_linenumber" name="L639" href="#L639">639</a>             sb.append( executionTimeMillis );
+<a class="jxr_linenumber" name="L640" href="#L640">640</a>             sb.append( <span class="jxr_string">"ms]"</span> );
+<a class="jxr_linenumber" name="L641" href="#L641">641</a>         }
+<a class="jxr_linenumber" name="L642" href="#L642">642</a> 
+<a class="jxr_linenumber" name="L643" href="#L643">643</a>         <strong class="jxr_keyword">return</strong> sb.toString();
+<a class="jxr_linenumber" name="L644" href="#L644">644</a>     }
+<a class="jxr_linenumber" name="L645" href="#L645">645</a> 
+<a class="jxr_linenumber" name="L646" href="#L646">646</a>     <strong class="jxr_keyword">private</strong> <strong class="jxr_keyword">void</strong> logNonFatalProblem( <strong class="jxr_keyword">int</strong> line, Step step, String errorMessage, StringBuilder testTraceBuf,
+<a class="jxr_linenumber" name="L647" href="#L647">647</a>                                      StringBuilder verificationFailuresBuf )
+<a class="jxr_linenumber" name="L648" href="#L648">648</a>     {
+<a class="jxr_linenumber" name="L649" href="#L649">649</a>         String logLine = dumpTestStepWhenError( line, step, errorMessage );
+<a class="jxr_linenumber" name="L650" href="#L650">650</a>         <strong class="jxr_keyword">if</strong> ( traceTest )
+<a class="jxr_linenumber" name="L651" href="#L651">651</a>         {
+<a class="jxr_linenumber" name="L652" href="#L652">652</a>             System.out.println( logLine );
+<a class="jxr_linenumber" name="L653" href="#L653">653</a>         }
+<a class="jxr_linenumber" name="L654" href="#L654">654</a>         <strong class="jxr_keyword">else</strong>
+<a class="jxr_linenumber" name="L655" href="#L655">655</a>         {
+<a class="jxr_linenumber" name="L656" href="#L656">656</a>             testTraceBuf.append( logLine ).append( '\n' );
+<a class="jxr_linenumber" name="L657" href="#L657">657</a>         }
+<a class="jxr_linenumber" name="L658" href="#L658">658</a>         verificationFailuresBuf.append( '\n' ).append( errorMessage );
+<a class="jxr_linenumber" name="L659" href="#L659">659</a>     }
 <a class="jxr_linenumber" name="L660" href="#L660">660</a> 
-<a class="jxr_linenumber" name="L661" href="#L661">661</a>         <strong class="jxr_keyword">if</strong> ( verificationFailuresBuf.length() &gt; 0 )
-<a class="jxr_linenumber" name="L662" href="#L662">662</a>         {
-<a class="jxr_linenumber" name="L663" href="#L663">663</a>             <strong class="jxr_keyword">if</strong> ( !traceTest )
-<a class="jxr_linenumber" name="L664" href="#L664">664</a>             {
-<a class="jxr_linenumber" name="L665" href="#L665">665</a>                 System.out.println( testTraceBuf.toString() );
-<a class="jxr_linenumber" name="L666" href="#L666">666</a>             }
-<a class="jxr_linenumber" name="L667" href="#L667">667</a>             Assert.fail( <span class="jxr_string">"There are verification failures:"</span> + verificationFailuresBuf.toString() );
-<a class="jxr_linenumber" name="L668" href="#L668">668</a>         }
-<a class="jxr_linenumber" name="L669" href="#L669">669</a>     }
-<a class="jxr_linenumber" name="L670" href="#L670">670</a> 
-<a class="jxr_linenumber" name="L671" href="#L671">671</a>     <strong class="jxr_keyword">private</strong> String dumpTestStep( <strong class="jxr_keyword">int</strong> line, Step step )
-<a class="jxr_linenumber" name="L672" href="#L672">672</a>     {
-<a class="jxr_linenumber" name="L673" href="#L673">673</a>         <strong class="jxr_keyword">long</strong> executionTimeMillis = step.getExecutionTimeMillis();
+<a class="jxr_linenumber" name="L661" href="#L661">661</a>     <strong class="jxr_keyword">private</strong> <strong class="jxr_keyword">void</strong> logFatalProblem( <strong class="jxr_keyword">int</strong> line, Step step, String errorMessage, StringBuilder testTraceBuf, StringBuilder verificationFailuresBuf )
+<a class="jxr_linenumber" name="L662" href="#L662">662</a>     {
+<a class="jxr_linenumber" name="L663" href="#L663">663</a>         String logLine = dumpTestStepWhenError( line, step, errorMessage );
+<a class="jxr_linenumber" name="L664" href="#L664">664</a>         <strong class="jxr_keyword">if</strong> ( traceTest )
+<a class="jxr_linenumber" name="L665" href="#L665">665</a>         {
+<a class="jxr_linenumber" name="L666" href="#L666">666</a>             System.out.println( logLine );
+<a class="jxr_linenumber" name="L667" href="#L667">667</a>         }
+<a class="jxr_linenumber" name="L668" href="#L668">668</a>         <strong class="jxr_keyword">else</strong>
+<a class="jxr_linenumber" name="L669" href="#L669">669</a>         {
+<a class="jxr_linenumber" name="L670" href="#L670">670</a>             testTraceBuf.append( logLine );
+<a class="jxr_linenumber" name="L671" href="#L671">671</a>             System.out.println( testTraceBuf.toString() );
+<a class="jxr_linenumber" name="L672" href="#L672">672</a>         }
+<a class="jxr_linenumber" name="L673" href="#L673">673</a>     }
 <a class="jxr_linenumber" name="L674" href="#L674">674</a> 
-<a class="jxr_linenumber" name="L675" href="#L675">675</a>         StringBuilder sb = <strong class="jxr_keyword">new</strong> StringBuilder();
-<a class="jxr_linenumber" name="L676" href="#L676">676</a>         sb.append( <span class="jxr_string">" "</span> );
-<a class="jxr_linenumber" name="L677" href="#L677">677</a>         sb.append( String.format( <span class="jxr_string">"%4s"</span>, line ) );
-<a class="jxr_linenumber" name="L678" href="#L678">678</a>         sb.append( <span class="jxr_string">": "</span> );
-<a class="jxr_linenumber" name="L679" href="#L679">679</a>         sb.append( step.toString() );
-<a class="jxr_linenumber" name="L680" href="#L680">680</a>         <strong class="jxr_keyword">if</strong> ( executionTimeMillis &gt;= 0 )
-<a class="jxr_linenumber" name="L681" href="#L681">681</a>         {
-<a class="jxr_linenumber" name="L682" href="#L682">682</a>             sb.append( <span class="jxr_string">" ["</span> );
-<a class="jxr_linenumber" name="L683" href="#L683">683</a>             sb.append( executionTimeMillis );
-<a class="jxr_linenumber" name="L684" href="#L684">684</a>             sb.append( <span class="jxr_string">"ms]"</span> );
-<a class="jxr_linenumber" name="L685" href="#L685">685</a>         }
-<a class="jxr_linenumber" name="L686" href="#L686">686</a> 
-<a class="jxr_linenumber" name="L687" href="#L687">687</a>         <strong class="jxr_keyword">return</strong> sb.toString();
-<a class="jxr_linenumber" name="L688" href="#L688">688</a>     }
-<a class="jxr_linenumber" name="L689" href="#L689">689</a> 
-<a class="jxr_linenumber" name="L690" href="#L690">690</a>     <strong class="jxr_keyword">private</strong> String dumpTestStepWhenError( <strong class="jxr_keyword">int</strong> line, Step step, String errorMessage )
-<a class="jxr_linenumber" name="L691" href="#L691">691</a>     {
-<a class="jxr_linenumber" name="L692" href="#L692">692</a>         <strong class="jxr_keyword">long</strong> executionTimeMillis = step.getExecutionTimeMillis();
-<a class="jxr_linenumber" name="L693" href="#L693">693</a> 
-<a class="jxr_linenumber" name="L694" href="#L694">694</a>         StringBuilder sb = <strong class="jxr_keyword">new</strong> StringBuilder();
-<a class="jxr_linenumber" name="L695" href="#L695">695</a>         sb.append( <span class="jxr_string">"*"</span> );
-<a class="jxr_linenumber" name="L696" href="#L696">696</a>         sb.append( String.format( <span class="jxr_string">"%4s"</span>, line ) );
-<a class="jxr_linenumber" name="L697" href="#L697">697</a>         sb.append( <span class="jxr_string">": "</span> );
-<a class="jxr_linenumber" name="L698" href="#L698">698</a>         sb.append( step.toString() );
-<a class="jxr_linenumber" name="L699" href="#L699">699</a>         <strong class="jxr_keyword">if</strong> ( executionTimeMillis &gt;= 0 )
-<a class="jxr_linenumber" name="L700" href="#L700">700</a>         {
-<a class="jxr_linenumber" name="L701" href="#L701">701</a>             sb.append( <span class="jxr_string">" ["</span> );
-<a class="jxr_linenumber" name="L702" href="#L702">702</a>             sb.append( executionTimeMillis );
-<a class="jxr_linenumber" name="L703" href="#L703">703</a>             sb.append( <span class="jxr_string">"ms]"</span> );
-<a class="jxr_linenumber" name="L704" href="#L704">704</a>         }
-<a class="jxr_linenumber" name="L705" href="#L705">705</a>         sb.append( <span class="jxr_string">" "</span> );
-<a class="jxr_linenumber" name="L706" href="#L706">706</a>         sb.append( errorMessage );
-<a class="jxr_linenumber" name="L707" href="#L707">707</a> 
-<a class="jxr_linenumber" name="L708" href="#L708">708</a>         <strong class="jxr_keyword">return</strong> sb.toString();
-<a class="jxr_linenumber" name="L709" href="#L709">709</a>     }
-<a class="jxr_linenumber" name="L710" href="#L710">710</a> 
-<a class="jxr_linenumber" name="L711" href="#L711">711</a>     <strong class="jxr_keyword">private</strong> <a href="../../../../../com/google/code/play/selenium/step/BooleanSeleniumCommand.html">BooleanSeleniumCommand</a> getInnerBooleanCommand( String innerCmd, StoredVars storedVars, String param1 )
-<a class="jxr_linenumber" name="L712" href="#L712">712</a>     {
-<a class="jxr_linenumber" name="L713" href="#L713">713</a>         <strong class="jxr_keyword">return</strong> <strong class="jxr_keyword">new</strong> <a href="../../../../../com/google/code/play/selenium/step/BooleanSeleniumCommand.html">BooleanSeleniumCommand</a>( storedVars, commandProcessor, <span class="jxr_string">"is"</span> + innerCmd, param1 );
-<a class="jxr_linenumber" name="L714" href="#L714">714</a>     }
-<a class="jxr_linenumber" name="L715" href="#L715">715</a> 
-<a class="jxr_linenumber" name="L716" href="#L716">716</a>     <strong class="jxr_keyword">private</strong> <a href="../../../../../com/google/code/play/selenium/step/StringSeleniumCommand.html">StringSeleniumCommand</a> getInnerStringCommand( String innerCmd, StoredVars storedVars, String param1 )
-<a class="jxr_linenumber" name="L717" href="#L717">717</a>     {
-<a class="jxr_linenumber" name="L718" href="#L718">718</a>         <strong class="jxr_keyword">return</strong> <strong class="jxr_keyword">new</strong> <a href="../../../../../com/google/code/play/selenium/step/StringSeleniumCommand.html">StringSeleniumCommand</a>( storedVars, commandProcessor, <span class="jxr_string">"get"</span> + innerCmd, param1 );
-<a class="jxr_linenumber" name="L719" href="#L719">719</a>     }
-<a class="jxr_linenumber" name="L720" href="#L720">720</a> 
-<a class="jxr_linenumber" name="L721" href="#L721">721</a> }
+<a class="jxr_linenumber" name="L675" href="#L675">675</a>     <strong class="jxr_keyword">private</strong> String dumpTestStepWhenError( <strong class="jxr_keyword">int</strong> line, Step step, String errorMessage )
+<a class="jxr_linenumber" name="L676" href="#L676">676</a>     {
+<a class="jxr_linenumber" name="L677" href="#L677">677</a>         <strong class="jxr_keyword">long</strong> executionTimeMillis = step.getExecutionTimeMillis();
+<a class="jxr_linenumber" name="L678" href="#L678">678</a> 
+<a class="jxr_linenumber" name="L679" href="#L679">679</a>         StringBuilder sb = <strong class="jxr_keyword">new</strong> StringBuilder();
+<a class="jxr_linenumber" name="L680" href="#L680">680</a>         sb.append( <span class="jxr_string">"*"</span> );
+<a class="jxr_linenumber" name="L681" href="#L681">681</a>         sb.append( String.format( <span class="jxr_string">"%4s"</span>, line ) );
+<a class="jxr_linenumber" name="L682" href="#L682">682</a>         sb.append( <span class="jxr_string">": "</span> );
+<a class="jxr_linenumber" name="L683" href="#L683">683</a>         sb.append( step.toString() );
+<a class="jxr_linenumber" name="L684" href="#L684">684</a>         <strong class="jxr_keyword">if</strong> ( executionTimeMillis &gt;= 0 )
+<a class="jxr_linenumber" name="L685" href="#L685">685</a>         {
+<a class="jxr_linenumber" name="L686" href="#L686">686</a>             sb.append( <span class="jxr_string">" ["</span> );
+<a class="jxr_linenumber" name="L687" href="#L687">687</a>             sb.append( executionTimeMillis );
+<a class="jxr_linenumber" name="L688" href="#L688">688</a>             sb.append( <span class="jxr_string">"ms]"</span> );
+<a class="jxr_linenumber" name="L689" href="#L689">689</a>         }
+<a class="jxr_linenumber" name="L690" href="#L690">690</a>         sb.append( <span class="jxr_string">" "</span> );
+<a class="jxr_linenumber" name="L691" href="#L691">691</a>         sb.append( errorMessage );
+<a class="jxr_linenumber" name="L692" href="#L692">692</a> 
+<a class="jxr_linenumber" name="L693" href="#L693">693</a>         <strong class="jxr_keyword">return</strong> sb.toString();
+<a class="jxr_linenumber" name="L694" href="#L694">694</a>     }
+<a class="jxr_linenumber" name="L695" href="#L695">695</a> 
+<a class="jxr_linenumber" name="L696" href="#L696">696</a>     <strong class="jxr_keyword">private</strong> <a href="../../../../../com/google/code/play/selenium/step/BooleanSeleniumCommand.html">BooleanSeleniumCommand</a> getInnerBooleanCommand( String innerCmd, StoredVars storedVars, String param1 )
+<a class="jxr_linenumber" name="L697" href="#L697">697</a>     {
+<a class="jxr_linenumber" name="L698" href="#L698">698</a>         <strong class="jxr_keyword">return</strong> <strong class="jxr_keyword">new</strong> <a href="../../../../../com/google/code/play/selenium/step/BooleanSeleniumCommand.html">BooleanSeleniumCommand</a>( storedVars, commandProcessor, <span class="jxr_string">"is"</span> + innerCmd, param1 );
+<a class="jxr_linenumber" name="L699" href="#L699">699</a>     }
+<a class="jxr_linenumber" name="L700" href="#L700">700</a> 
+<a class="jxr_linenumber" name="L701" href="#L701">701</a>     <strong class="jxr_keyword">private</strong> <a href="../../../../../com/google/code/play/selenium/step/StringSeleniumCommand.html">StringSeleniumCommand</a> getInnerStringCommand( String innerCmd, StoredVars storedVars, String param1 )
+<a class="jxr_linenumber" name="L702" href="#L702">702</a>     {
+<a class="jxr_linenumber" name="L703" href="#L703">703</a>         <strong class="jxr_keyword">return</strong> <strong class="jxr_keyword">new</strong> <a href="../../../../../com/google/code/play/selenium/step/StringSeleniumCommand.html">StringSeleniumCommand</a>( storedVars, commandProcessor, <span class="jxr_string">"get"</span> + innerCmd, param1 );
+<a class="jxr_linenumber" name="L704" href="#L704">704</a>     }
+<a class="jxr_linenumber" name="L705" href="#L705">705</a> 
+<a class="jxr_linenumber" name="L706" href="#L706">706</a> }
 </pre>
 <hr/>
 <div id="footer">Copyright &#169; 2010&#x2013;2016. All rights reserved.</div>

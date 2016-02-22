@@ -7,7 +7,7 @@
 <body>
 <div id="overview"><a href="../../../../../../../apidocs/com/google/code/play/selenium/step/WaitForNotEqualsStep.html">View Javadoc</a></div><pre>
 <a class="jxr_linenumber" name="L1" href="#L1">1</a>   <em class="jxr_comment">/*</em>
-<a class="jxr_linenumber" name="L2" href="#L2">2</a>   <em class="jxr_comment"> * Copyright 2010-2015 Grzegorz Slowikowski</em>
+<a class="jxr_linenumber" name="L2" href="#L2">2</a>   <em class="jxr_comment"> * Copyright 2010-2016 Grzegorz Slowikowski</em>
 <a class="jxr_linenumber" name="L3" href="#L3">3</a>   <em class="jxr_comment"> *</em>
 <a class="jxr_linenumber" name="L4" href="#L4">4</a>   <em class="jxr_comment"> * Licensed under the Apache License, Version 2.0 (the "License");</em>
 <a class="jxr_linenumber" name="L5" href="#L5">5</a>   <em class="jxr_comment"> * you may not use this file except in compliance with the License.</em>
@@ -61,7 +61,7 @@
 <a class="jxr_linenumber" name="L53" href="#L53">53</a>          <strong class="jxr_keyword">if</strong> ( !success )
 <a class="jxr_linenumber" name="L54" href="#L54">54</a>          {
 <a class="jxr_linenumber" name="L55" href="#L55">55</a>              String assertMessage = <span class="jxr_string">"Actual value \&quot;"</span> + innerCommandResult + <span class="jxr_string">"\&quot; did match \&quot;"</span> + xexpected + <span class="jxr_string">"\&quot;"</span>;
-<a class="jxr_linenumber" name="L56" href="#L56">56</a>              Verify.fail( <span class="jxr_string">"Timed out after "</span> + getTimeout() + <span class="jxr_string">"ms ("</span> + assertMessage + <span class="jxr_string">")"</span> );
+<a class="jxr_linenumber" name="L56" href="#L56">56</a>              throwTimeoutException( assertMessage );
 <a class="jxr_linenumber" name="L57" href="#L57">57</a>          }
 <a class="jxr_linenumber" name="L58" href="#L58">58</a>      }
 <a class="jxr_linenumber" name="L59" href="#L59">59</a>  

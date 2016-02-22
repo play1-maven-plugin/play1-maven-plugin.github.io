@@ -7,7 +7,8 @@
 <area shape="rect" id="node3" href="./PlayWarExplodedMojo.html" title="&lt;TABLE&gt;" alt="" coords="312,197,475,245"/>
 <area shape="rect" id="c557" href="./AbstractPlayWarMojo.html" title="com.google.code.play.AbstractPlayWarMojo" alt="" coords="325,113,461,137"/>
 <area shape="rect" id="node4" href="./AbstractPlayWarMojo.html" title="&lt;TABLE&gt;" alt="" coords="315,101,472,149"/>
-<area shape="rect" id="node11" href="null" title="&lt;TABLE&gt;" alt="" coords="499,197,677,245"/>
+<area shape="rect" id="c568" href="http://play1-maven-plugin.github.io/external-apidocs/org/codehaus/plexus/plexus-archiver/2.10.3/org/codehaus/plexus/archiver/war/WarArchiver.html" title="org.codehaus.plexus.archiver.war.WarArchiver" alt="" coords="509,203,667,239"/>
+<area shape="rect" id="node11" href="http://play1-maven-plugin.github.io/external-apidocs/org/codehaus/plexus/plexus-archiver/2.10.3/org/codehaus/plexus/archiver/war/WarArchiver.html" title="&lt;TABLE&gt;" alt="" coords="499,197,677,245"/>
 <area shape="rect" id="c565" href="./AbstractArchivingMojo.html" title="com.google.code.play.AbstractArchivingMojo" alt="" coords="380,17,521,41"/>
 <area shape="rect" id="node5" href="./AbstractArchivingMojo.html" title="&lt;TABLE&gt;" alt="" coords="369,5,532,53"/>
 </map>

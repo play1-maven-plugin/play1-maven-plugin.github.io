@@ -5,8 +5,8 @@
 <area shape="rect" id="node2" href="./PlayStartMojo.html" title="&lt;TABLE&gt;" alt="" coords="179,197,293,245"/>
 <area shape="rect" id="c492" href="./AbstractPlayStartServerMojo.html" title="com.google.code.play.AbstractPlayStartServerMojo" alt="" coords="155,113,330,137"/>
 <area shape="rect" id="node3" href="./AbstractPlayStartServerMojo.html" title="&lt;TABLE&gt;" alt="" coords="145,101,340,149"/>
-<area shape="rect" id="c501" href="http://play2-maven-plugin.github.io/external-apidocs/org/apache/ant/ant/1.9.4/org/apache/tools/ant/taskdefs/Java.html" title="org.apache.tools.ant.taskdefs.Java" alt="" coords="328,203,472,239"/>
-<area shape="rect" id="node9" href="http://play2-maven-plugin.github.io/external-apidocs/org/apache/ant/ant/1.9.4/org/apache/tools/ant/taskdefs/Java.html" title="&lt;TABLE&gt;" alt="" coords="317,197,483,245"/>
+<area shape="rect" id="c501" href="http://play1-maven-plugin.github.io/external-apidocs/org/apache/ant/ant/1.9.4/org/apache/tools/ant/taskdefs/Java.html" title="org.apache.tools.ant.taskdefs.Java" alt="" coords="328,203,472,239"/>
+<area shape="rect" id="node9" href="http://play1-maven-plugin.github.io/external-apidocs/org/apache/ant/ant/1.9.4/org/apache/tools/ant/taskdefs/Java.html" title="&lt;TABLE&gt;" alt="" coords="317,197,483,245"/>
 <area shape="rect" id="c493" href="./AbstractPlayServerMojo.html" title="com.google.code.play.AbstractPlayServerMojo" alt="" coords="235,17,384,41"/>
 <area shape="rect" id="node4" href="./AbstractPlayServerMojo.html" title="&lt;TABLE&gt;" alt="" coords="224,5,395,53"/>
 </map>
