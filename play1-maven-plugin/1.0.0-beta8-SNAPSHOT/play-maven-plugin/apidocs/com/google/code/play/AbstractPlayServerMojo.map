@@ -11,10 +11,10 @@
 <area shape="rect" id="node4" href="./AbstractPlayRunMojo.html" title="&lt;TABLE&gt;" alt="" coords="650,204,808,252"/>
 <area shape="rect" id="c464" href="http://maven.apache.org/ref/2.2.1/maven-artifact/apidocs/org/apache/maven/artifact/Artifact.html" title="org.apache.maven.artifact.Artifact" alt="" coords="842,203,971,253"/>
 <area shape="rect" id="node11" href="http://maven.apache.org/ref/2.2.1/maven-artifact/apidocs/org/apache/maven/artifact/Artifact.html" title="&lt;TABLE&gt;" alt="" coords="832,197,981,259"/>
-<area shape="rect" id="c466" href="http://play1-maven-plugin.github.io/external-apidocs/org/apache/ant/ant/1.9.4/org/apache/tools/ant/types/Path.html" title="org.apache.tools.ant.types.Path" alt="" coords="258,210,389,246"/>
-<area shape="rect" id="node16" href="http://play1-maven-plugin.github.io/external-apidocs/org/apache/ant/ant/1.9.4/org/apache/tools/ant/types/Path.html" title="&lt;TABLE&gt;" alt="" coords="248,204,400,252"/>
-<area shape="rect" id="c467" href="http://play1-maven-plugin.github.io/external-apidocs/org/apache/ant/ant/1.9.4/org/apache/tools/ant/Project.html" title="org.apache.tools.ant.Project" alt="" coords="1016,210,1120,246"/>
-<area shape="rect" id="node18" href="http://play1-maven-plugin.github.io/external-apidocs/org/apache/ant/ant/1.9.4/org/apache/tools/ant/Project.html" title="&lt;TABLE&gt;" alt="" coords="1005,204,1130,252"/>
+<area shape="rect" id="c466" href="http://play1-maven-plugin.github.io/external-apidocs/org/apache/ant/ant/1.9.4/org/apache/tools/ant/Project.html" title="org.apache.tools.ant.Project" alt="" coords="1016,210,1120,246"/>
+<area shape="rect" id="node16" href="http://play1-maven-plugin.github.io/external-apidocs/org/apache/ant/ant/1.9.4/org/apache/tools/ant/Project.html" title="&lt;TABLE&gt;" alt="" coords="1005,204,1130,252"/>
+<area shape="rect" id="c467" href="http://play1-maven-plugin.github.io/external-apidocs/org/apache/ant/ant/1.9.4/org/apache/tools/ant/types/Path.html" title="org.apache.tools.ant.types.Path" alt="" coords="258,210,389,246"/>
+<area shape="rect" id="node19" href="http://play1-maven-plugin.github.io/external-apidocs/org/apache/ant/ant/1.9.4/org/apache/tools/ant/types/Path.html" title="&lt;TABLE&gt;" alt="" coords="248,204,400,252"/>
 <area shape="rect" id="c462" href="./AbstractAntJavaBasedPlayMojo.html" title="com.google.code.play.AbstractAntJavaBasedPlayMojo" alt="" coords="810,17,1003,41"/>
 <area shape="rect" id="node5" href="./AbstractAntJavaBasedPlayMojo.html" title="&lt;TABLE&gt;" alt="" coords="800,5,1013,53"/>
 </map>
