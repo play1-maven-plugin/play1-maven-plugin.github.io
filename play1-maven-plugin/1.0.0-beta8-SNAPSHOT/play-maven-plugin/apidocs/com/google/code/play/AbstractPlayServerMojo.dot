@@ -51,18 +51,18 @@ digraph G {
 	c462:p -> c464:p [taillabel="", label="", headlabel="*", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 	// com.google.code.play.AbstractPlayStartServerMojo DEPEND org.apache.tools.ant.taskdefs.Java
 	c455:p -> c465:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
-	// com.google.code.play.AbstractPlayServerMojo DEPEND org.apache.tools.ant.taskdefs.Java
-	c456:p -> c465:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
 	// com.google.code.play.AbstractPlayServerMojo DEPEND org.apache.tools.ant.Project
 	c456:p -> c466:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
-	// com.google.code.play.AbstractPlayServerMojo DEPEND org.apache.maven.artifact.Artifact
-	c456:p -> c464:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
 	// com.google.code.play.AbstractPlayServerMojo DEPEND org.apache.tools.ant.types.Path
 	c456:p -> c467:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
-	// com.google.code.play.AbstractAntJavaBasedPlayMojo DEPEND org.apache.tools.ant.taskdefs.Java
-	c462:p -> c465:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
+	// com.google.code.play.AbstractPlayServerMojo DEPEND org.apache.tools.ant.taskdefs.Java
+	c456:p -> c465:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
+	// com.google.code.play.AbstractPlayServerMojo DEPEND org.apache.maven.artifact.Artifact
+	c456:p -> c464:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
 	// com.google.code.play.AbstractAntJavaBasedPlayMojo DEPEND org.apache.tools.ant.Project
 	c462:p -> c466:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
+	// com.google.code.play.AbstractAntJavaBasedPlayMojo DEPEND org.apache.tools.ant.taskdefs.Java
+	c462:p -> c465:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
 	// com.google.code.play.AbstractAntJavaBasedPlayMojo DEPEND org.apache.maven.artifact.Artifact
 	c462:p -> c464:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
 	// org.apache.tools.ant.types.Path

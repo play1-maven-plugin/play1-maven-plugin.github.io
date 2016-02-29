@@ -19,12 +19,12 @@ digraph G {
 	c635:p -> c602:p [dir=back,arrowtail=empty];
 	// com.google.code.play.HelpMojo DEPEND org.w3c.dom.Node
 	c602:p -> c636:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
-	// com.google.code.play.HelpMojo DEPEND org.w3c.dom.Element
-	c602:p -> c637:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
 	// com.google.code.play.HelpMojo DEPEND org.w3c.dom.Document
+	c602:p -> c637:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
+	// com.google.code.play.HelpMojo DEPEND org.w3c.dom.Element
 	c602:p -> c638:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
 	// org.w3c.dom.Document
-	c638 [label=<<table title="org.w3c.dom.Document" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://download.oracle.com/javase/5/docs/api/org/w3c/dom/Document.html">
+	c637 [label=<<table title="org.w3c.dom.Document" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://download.oracle.com/javase/5/docs/api/org/w3c/dom/Document.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Document </td></tr>
@@ -40,7 +40,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="http://download.oracle.com/javase/5/docs/api/org/w3c/dom/Node.html", fontname="arial", fontcolor="black", fontsize=9.0];
 	// org.w3c.dom.Element
-	c637 [label=<<table title="org.w3c.dom.Element" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://download.oracle.com/javase/5/docs/api/org/w3c/dom/Element.html">
+	c638 [label=<<table title="org.w3c.dom.Element" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://download.oracle.com/javase/5/docs/api/org/w3c/dom/Element.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Element </td></tr>

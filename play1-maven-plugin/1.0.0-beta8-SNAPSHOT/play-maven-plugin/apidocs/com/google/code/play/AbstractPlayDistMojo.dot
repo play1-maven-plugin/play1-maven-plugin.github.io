@@ -39,14 +39,14 @@ digraph G {
 	c355:p -> c343:p [dir=back,arrowtail=empty];
 	//com.google.code.play.AbstractPlayDistMojo extends com.google.code.play.AbstractArchivingMojo
 	c357:p -> c355:p [dir=back,arrowtail=empty];
-	// com.google.code.play.AbstractPlayDistMojo DEPEND org.apache.maven.artifact.Artifact
-	c355:p -> c360:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
 	// com.google.code.play.AbstractPlayDistMojo DEPEND org.codehaus.plexus.archiver.zip.ZipArchiver
+	c355:p -> c360:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
+	// com.google.code.play.AbstractPlayDistMojo DEPEND org.apache.maven.artifact.Artifact
 	c355:p -> c361:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
 	// com.google.code.play.AbstractArchivingMojo DEPEND org.codehaus.plexus.archiver.zip.ZipArchiver
-	c357:p -> c361:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
+	c357:p -> c360:p [taillabel="", label="", headlabel="", fontname="arial", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
 	// org.apache.maven.artifact.Artifact
-	c360 [label=<<table title="org.apache.maven.artifact.Artifact" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://maven.apache.org/ref/2.2.1/maven-artifact/apidocs/org/apache/maven/artifact/Artifact.html">
+	c361 [label=<<table title="org.apache.maven.artifact.Artifact" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://maven.apache.org/ref/2.2.1/maven-artifact/apidocs/org/apache/maven/artifact/Artifact.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Artifact </td></tr>
@@ -54,11 +54,11 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="http://maven.apache.org/ref/2.2.1/maven-artifact/apidocs/org/apache/maven/artifact/Artifact.html", fontname="arial", fontcolor="black", fontsize=9.0];
 	// org.codehaus.plexus.archiver.zip.ZipArchiver
-	c361 [label=<<table title="org.codehaus.plexus.archiver.zip.ZipArchiver" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c360 [label=<<table title="org.codehaus.plexus.archiver.zip.ZipArchiver" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://play1-maven-plugin.github.io/external-apidocs/org/codehaus/plexus/plexus-archiver/3.0.3/org/codehaus/plexus/archiver/zip/ZipArchiver.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> ZipArchiver </td></tr>
 <tr><td align="center" balign="center"><font point-size="7.0"> org.codehaus.plexus.archiver.zip </font></td></tr>
 		</table></td></tr>
-		</table>>, URL="null", fontname="arial", fontcolor="black", fontsize=9.0];
+		</table>>, URL="http://play1-maven-plugin.github.io/external-apidocs/org/codehaus/plexus/plexus-archiver/3.0.3/org/codehaus/plexus/archiver/zip/ZipArchiver.html", fontname="arial", fontcolor="black", fontsize=9.0];
 }
 

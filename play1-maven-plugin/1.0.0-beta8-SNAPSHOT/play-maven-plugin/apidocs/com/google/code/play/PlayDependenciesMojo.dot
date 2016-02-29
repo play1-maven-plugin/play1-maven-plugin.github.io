@@ -49,13 +49,13 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="http://maven.apache.org/ref/2.2.1/maven-project/apidocs/org/apache/maven/project/MavenProject.html", fontname="arial", fontcolor="black", fontsize=9.0];
 	// org.codehaus.plexus.archiver.manager.ArchiverManager
-	c771 [label=<<table title="org.codehaus.plexus.archiver.manager.ArchiverManager" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p">
+	c771 [label=<<table title="org.codehaus.plexus.archiver.manager.ArchiverManager" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://play1-maven-plugin.github.io/external-apidocs/org/codehaus/plexus/plexus-archiver/3.0.3/org/codehaus/plexus/archiver/manager/ArchiverManager.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> ArchiverManager </td></tr>
 <tr><td align="center" balign="center"><font point-size="7.0"> org.codehaus.plexus.archiver.manager </font></td></tr>
 		</table></td></tr>
-		</table>>, URL="null", fontname="arial", fontcolor="black", fontsize=9.0];
+		</table>>, URL="http://play1-maven-plugin.github.io/external-apidocs/org/codehaus/plexus/plexus-archiver/3.0.3/org/codehaus/plexus/archiver/manager/ArchiverManager.html", fontname="arial", fontcolor="black", fontsize=9.0];
 	// org.apache.maven.artifact.Artifact
 	c774 [label=<<table title="org.apache.maven.artifact.Artifact" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="http://maven.apache.org/ref/2.2.1/maven-artifact/apidocs/org/apache/maven/artifact/Artifact.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
